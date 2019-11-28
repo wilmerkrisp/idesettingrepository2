@@ -5,7 +5,7 @@
 
 #parse("File Header.java")
  
-/**                             
+/**<pre>                             
 *   interface simple
 *   !CHANGE_ME_DESCRIPTION!
 *
@@ -13,7 +13,7 @@
 *   @version    1.0
 *   @since      1.0 wilmer draft
 
-* <pre>{@code
+* {@code
 *
 *
 * example 1  

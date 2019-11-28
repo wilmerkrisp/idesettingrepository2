@@ -11,7 +11,7 @@ import java.util.Comparator;
 
 
 
-/**
+/**<pre>
  * simple mutable class
  * !CHANGE_ME_DESCRIPTION!
  *
@@ -39,8 +39,11 @@ import java.util.Comparator;
  
 
  
- 
- */
+* Preconditions: 	none
+* Postconditions:	none
+* Side effects:		none
+* Tread safety:		Not thread-safe
+ </pre>*/
  
  
  #if(${uncomment1}==1)

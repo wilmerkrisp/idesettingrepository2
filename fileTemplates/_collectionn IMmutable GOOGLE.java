@@ -7,15 +7,10 @@
 
 
 
-/**
+/**<pre>
 *   class
     my mutable list
 *
-
-
-*   @author     wilmer
-*   @version    1.0
-*   @since      1.0 wilmer draft
 
     #parse("inheritanceComposition.java")
 
@@ -38,21 +33,30 @@
        
          b) тк должна быть одна точка входа,
        то поместите все проверки в конструктор
-       
-       
+        
 
-* <pre>{@code
+* {@code
 *
 * example 1
 *
 
 *
 *
-* }</pre>
+* }
+* Preconditions: 	none
+* Postconditions:	none
+* Side effects:		none
+* Tread safety:		Immutable
+
+</pre>
+
+*   @author     wilmer
+*   @version    1.0
+*   @since      1.0 wilmer draft
 
   Every constructor/fabric can raise the exceptions:
- @throws NullPointerException if argument nullable (or one of collection's element null)
- @throws IllegalArgumentException if argument empty (or one of collection's element empty)
+ throws NullPointerException if argument nullable (or one of collection's element null)
+ throws IllegalArgumentException if argument empty (or one of collection's element empty)
 
 */
 @Immutable
@@ -77,9 +81,9 @@ public final class ${NAME}
 		#parse("throwdontuse")
 		}
 	
-	private ${NAME}(@NotNull  ${CollectionType}< ${KEY} > backingImmutableCollection )
+	private ${NAME}(@NonNull  ${CollectionType}< ${KEY} > backingImmutableCollection )
 		{
-		checkNotNull(backingImmutableCollection);
+		//checkNotNull(backingImmutableCollection);
 		this.delegate = backingImmutableCollection;
 		
 	    /*
@@ -89,7 +93,7 @@ public final class ${NAME}
 		*/
 		}
 	
-    public static ${NAME} of(@NotNull  ${CollectionType}< ${KEY} > backingImmutableCollection )
+    public static ${NAME} of(@NonNull  ${CollectionType}< ${KEY} > backingImmutableCollection )
         {
         return new  ${NAME}(backingImmutableCollection);
         }

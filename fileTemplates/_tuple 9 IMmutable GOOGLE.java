@@ -11,7 +11,7 @@ import java.util.Comparator;
 import com.google.auto.value.AutoValue;
 
 
-/**
+/**<pre>
  * class-value nonmutable
  * !CHANGE_ME_DESCRIPTION!
  *
@@ -19,9 +19,7 @@ import com.google.auto.value.AutoValue;
 
 *   ${T1} ${T2} ${T3} ${T4} ${T5} ${T6} ${T7} ${T8} ${T9}
  *
-*   @author     wilmer
-*   @version    1.0
-*   @since      1.0 wilmer draft
+
  *
  
  	1) чтобы нельзя было отнаследовать и затереть данные подкласса ВЫБРАН ВАРИАНТ Б)
@@ -40,12 +38,19 @@ import com.google.auto.value.AutoValue;
 	   - для немутабельных классов статические методы генерации копии имеют смысл, если получают на вход  параметр более общего интерфейса и мутабельный аргумент (см как в коллекциях Java)
 	   - они называются conversion constructors / conversion factories 
 
+* Preconditions: 	none
+* Postconditions:	none
+* Side effects:		none
+* Tread safety:		Immutable
+ </pre>
  
- 
- 
+ *   @author     wilmer
+*   @version    1.0
+*   @since      1.0 wilmer draft
+
   Every constructor/fabric can raise the exceptions:
- @throws NullPointerException if argument nullable
- @throws IllegalArgumentException if argument empty 
+ throws NullPointerException if argument nullable
+ throws IllegalArgumentException if argument empty 
  
  */
  

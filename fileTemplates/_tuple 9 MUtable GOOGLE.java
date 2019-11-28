@@ -10,7 +10,7 @@ import java.util.Comparator;
 
 
 
-/**
+/**<pre>
  * simple mutable class
  * !CHANGE_ME_DESCRIPTION!
  *
@@ -35,10 +35,11 @@ import java.util.Comparator;
 
     *   ${T1} ${T2} ${T3} ${T4} ${T5} ${T6} ${T7} ${T8} ${T9}
  
- 
-
- 
- 
+* Preconditions: 	none
+* Postconditions:	none
+* Side effects:		none
+* Tread safety:		Not thread-safe
+ </pre>
  */
  
  

@@ -7,7 +7,7 @@
 
 
 
-/**
+/**<pre>
 *   class
     my mutable list
 *
@@ -16,20 +16,28 @@
 
 
 
-*   @author     wilmer
-*   @version    1.0
-*   @since      1.0 wilmer draft
-
     #parse("inheritanceComposition.java")
 
-* <pre>{@code
+* {@code
 *
 * example 1
 *
 
 *
 *
-* }</pre>
+* }
+
+* Preconditions: 	none
+* Postconditions:	none
+* Side effects:		none
+* Tread safety:		Not thread-safe
+
+</pre>
+
+*   @author     wilmer
+*   @version    1.0
+*   @since      1.0 wilmer draft
+
 */
 
 public final class ${NAME}<TKey,TValue>
@@ -55,14 +63,14 @@ public final class ${NAME}<TKey,TValue>
 	/**
 	@throws NullPointerException if argument nullable
 	*/
-	public ${NAME}(@NotNull  ${CollectionType}< TKey,TValue > backingMutableMap )
+	public ${NAME}(@NonNull  ${CollectionType}< TKey,TValue > backingMutableMap )
 		{
-		checkNotNull( backingMutableMap ,"You must set backing list." );
+		//checkNotNull( backingMutableMap ,"You must set backing list." );
 		this.delegate = backingMutableMap;
 		}
 	
 	
-	public static  <EKey,EValue> ${NAME}<EKey,EValue> of(@NotNull  ${CollectionType}< EKey,EValue > backingMutableMap )
+	public static  <EKey,EValue> ${NAME}<EKey,EValue> of(@NonNull  ${CollectionType}< EKey,EValue > backingMutableMap )
         {
         return new  ${NAME}<EKey,EValue>(backingMutableMap);
         }

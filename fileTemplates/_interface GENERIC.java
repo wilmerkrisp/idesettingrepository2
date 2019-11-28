@@ -5,18 +5,13 @@
 #parse("File Header.java")
 
  
-/**                             
+/**    <pre>                         
 *   interface GENERIC
 *   !CHANGE_ME_DESCRIPTION!
-*
-*   @author     wilmer
-*   @version    1.0
-*   @since      1.0 wilmer draft
-
 
     #parse("iclassforinheritance.java") 
 
-* <pre>{@code
+* {@code
 *
 *
 * example 1    
@@ -38,6 +33,9 @@
 *
 *
 * }</pre>
+*   @author     wilmer
+*   @version    1.0
+*   @since      1.0 wilmer draft
 */              
 public interface ${NAME}< T  /* extends super VCG_< T > & VIG_< T >*//* extends super VC_ & VI_ *//* extends super VCG_<String> & VIG_<String> */> 
     {  

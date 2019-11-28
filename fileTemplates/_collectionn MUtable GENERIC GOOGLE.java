@@ -7,7 +7,7 @@
 
 
 
-/**
+/**<pre>
 *   class
     my mutable list
 *
@@ -16,20 +16,26 @@
 
 
 
-*   @author     wilmer
-*   @version    1.0
-*   @since      1.0 wilmer draft
+
 
     #parse("inheritanceComposition.java")
 
-* <pre>{@code
+* {@code
 *
 * example 1
 *
 
 *
 *
-* }</pre>
+* }
+* Preconditions: 	none
+* Postconditions:	none
+* Side effects:		none
+* Tread safety:		Not thread-safe
+</pre>
+*   @author     wilmer
+*   @version    1.0
+*   @since      1.0 wilmer draft
 */
 
 public final class ${NAME}<T>
@@ -55,14 +61,14 @@ public final class ${NAME}<T>
 	/**
 	@throws NullPointerException if argument nullable
 	*/
-	public ${NAME}(@NotNull  ${CollectionType}<T > backingMutableCollection )
+	public ${NAME}(@NonNull  ${CollectionType}<T > backingMutableCollection )
 		{
-		checkNotNull( backingMutableCollection ,"You must set backing list." );
+		//checkNotNull( backingMutableCollection ,"You must set backing list." );
 		this.delegate = backingMutableCollection;
 		}
 	
 	
-	public static  <E> ${NAME}<E> of(@NotNull  ${CollectionType}< E > backingMutableCollection )
+	public static  <E> ${NAME}<E> of(@NonNull  ${CollectionType}< E > backingMutableCollection )
         {
         return new  ${NAME}<E>(backingMutableCollection);
         }

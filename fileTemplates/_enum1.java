@@ -6,7 +6,7 @@
 #parse("File Header.java")
 
  
-/**                             
+/**  <pre>                           
 *   enum simple
 *   !CHANGE_ME_DESCRIPTION!
 *
@@ -18,7 +18,7 @@
 
 
 
-* <pre>{@code
+* {@code
 *
 *
 * example 1

@@ -6,17 +6,15 @@
 #parse("File Header.java")
 
 
-/**                             
+/**<pre>                             
 *   class static (usual class with static properties and methods)
 *   !CHANGE_ME_DESCRIPTION!
 *
 
-*   @author     wilmer
-*   @version    1.0
-*   @since      1.0 wilmer draft
 
 
-* <pre>{@code
+
+* {@code
 *
 *
 * example 1
@@ -28,7 +26,17 @@
 *
 *
 *
-* }</pre>
+* }
+
+* Preconditions: 	none
+* Postconditions:	none
+* Side effects:		none
+* Tread safety:		Not thread-safe
+
+</pre>
+*   @author     wilmer
+*   @version    1.0
+*   @since      1.0 wilmer draft
 */
 public final class ${NAME}  
     {

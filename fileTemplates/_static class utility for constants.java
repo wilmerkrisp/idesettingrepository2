@@ -1,4 +1,6 @@
 #if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
 #parse("File Header.java")
 
 
@@ -20,6 +22,10 @@
      
      3) рекомендуется использовать перечисления вместо статических констант
     
+* Preconditions: 	none
+* Postconditions:	none
+* Side effects:		none
+* Tread safety:		Not thread-safe
 
 */
 public class ${NAME} 

@@ -7,15 +7,13 @@ import java.lang.annotation.*;
 
 
 
-/**                             
+/**  <pre>                           
 *   annotation  
 *   !CHANGE_ME_DESCRIPTION! 
 
-*   @author     wilmer
-*   @version    1.0
-*   @since      1.0 wilmer draft
+
 *
-* <pre>{@code
+* {@code
 *
 *
 * example 1
@@ -48,6 +46,10 @@ import java.lang.annotation.*;
 *
 *
 * }</pre>
+
+*   @author     wilmer
+*   @version    1.0
+*   @since      1.0 wilmer draft
 */
 @Inherited /*all subclasses inherit this annotation*/
 @Target( { ElementType.ANNOTATION_TYPE, ElementType .CONSTRUCTOR, ElementType .FIELD, ElementType .LOCAL_VARIABLE, ElementType .METHOD, ElementType .PACKAGE, ElementType .PARAMETER, ElementType .TYPE, ElementType .TYPE_PARAMETER, ElementType .TYPE_USE})
@@ -55,11 +57,11 @@ import java.lang.annotation.*;
 @interface ${NAME}
 	{
 	
-    /**
+    /**<pre>
     *   parameter 1
     *   !CHANGE_ME_DESCRIPTION!
     *
-    * <pre>{@code                   
+    * {@code                   
     *
     *
     * example 1
@@ -72,11 +74,11 @@ import java.lang.annotation.*;
     */  
 	String one() default "stroka";
 	
-	/**
+	/**<pre>
 	*   parameter 2
 	*   !CHANGE_ME_DESCRIPTION!
 	* 
-    * <pre>{@code                   
+    * {@code                   
     *
     *
     * example 1
@@ -90,11 +92,11 @@ import java.lang.annotation.*;
 	String two() default "stroka2";
 	
 	
-	/**
+	/**<pre>
 	*   parameter 3 (for monomial annotation, 1 argument value)
 	*   !CHANGE_ME_DESCRIPTION!
 	*
-    * <pre>{@code                   
+    * {@code                   
     *
     *
     * example 1
