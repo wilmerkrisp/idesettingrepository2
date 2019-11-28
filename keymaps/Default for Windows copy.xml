@@ -1,0 +1,12 @@
+<keymap version="1" name="Default for Windows copy" parent="$default">
+  <action id="EditorLookupDown" />
+  <action id="EditorScrollDown" />
+  <action id="FullyExpandTreeNode">
+    <keyboard-shortcut first-keystroke="multiply" />
+    <keyboard-shortcut first-keystroke="ctrl down" />
+  </action>
+  <action id="MethodOverloadSwitchDown" />
+  <action id="SearchEverywhere.NavigateToNextGroup">
+    <keyboard-shortcut first-keystroke="page_down" />
+  </action>
+</keymap>
