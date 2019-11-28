@@ -5,15 +5,13 @@
 
 #parse("File Header.java")
  
-/**                             
+/**<pre>                             
 *   interface for lambda GENERIC
 *   !CHANGE_ME_DESCRIPTION!
 *
-*   @author     wilmer
-*   @version    1.0
-*   @since      1.0 wilmer draft
 
-* <pre>{@code
+
+* {@code
 *
 *
 * example 1    
@@ -116,6 +114,9 @@
 *
 * }</pre>
 *
+*   @author     wilmer
+*   @version    1.0
+*   @since      1.0 wilmer draft
 *
 *
 */                

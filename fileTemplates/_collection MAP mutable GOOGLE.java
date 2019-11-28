@@ -7,29 +7,35 @@
 
 
 
-/**
+/**<pre>
 *   class
     my mutable list
 *
 
  0) пожалуйста подавайте на вход МУтабельный тип
 
-
-
-*   @author     wilmer
-*   @version    1.0
-*   @since      1.0 wilmer draft
-
     #parse("inheritanceComposition.java")
 
-* <pre>{@code
+* {@code
 *
 * example 1
 *
 
 *
 *
-* }</pre>
+* }
+
+* Preconditions: 	none
+* Postconditions:	none
+* Side effects:		none
+* Tread safety:		Not thread-safe
+
+</pre>
+
+*   @author     wilmer
+*   @version    1.0
+*   @since      1.0 wilmer draft
+
 */
 
 public final class ${NAME}
@@ -55,14 +61,14 @@ public final class ${NAME}
 	/**
 	@throws NullPointerException if argument nullable
 	*/
-	public ${NAME}(@NotNull  ${CollectionType}< ${KEY},${VALUE} > backingMutableMap )
+	public ${NAME}(@NonNull  ${CollectionType}< ${KEY},${VALUE} > backingMutableMap )
 		{
-		checkNotNull( backingMutableMap,"You must set backing list." );
+		//checkNotNull( backingMutableMap,"You must set backing list." );
 		this.delegate = backingMutableMap;
 		}
 	
 	
-	public static ${NAME}  of(@NotNull  ${CollectionType}< ${KEY},${VALUE} > backingMutableMap )
+	public static ${NAME}  of(@NonNull  ${CollectionType}< ${KEY},${VALUE} > backingMutableMap )
         {
         return new  ${NAME}(backingMutableMap);
         }

@@ -7,15 +7,9 @@
 
 
 
-/**
+/** <pre>
 *   class
     my mutable list
-*
-
-
-*   @author     wilmer
-*   @version    1.0
-*   @since      1.0 wilmer draft
 
     #parse("inheritanceComposition.java")
 
@@ -41,19 +35,26 @@
        
        
 
-* <pre>{@code
+*{@code
 *
 * example 1
 *
+* }
 
-*
-*
-* }</pre>
+* Preconditions: 	none
+* Postconditions:	none
+* Side effects:		none
+* Tread safety:		Immutable
 
+</pre>
+
+*   @author     wilmer
+*   @version    1.0
+*   @since      1.0 wilmer draft
 
   Every constructor/fabric can raise the exceptions:
- @throws NullPointerException if argument nullable (or one of collection's element null)
- @throws IllegalArgumentException if argument empty (or one of collection's element empty)
+ throws NullPointerException if argument nullable (or one of collection's element null)
+ throws IllegalArgumentException if argument empty (or one of collection's element empty)
  
  
 */
@@ -79,9 +80,8 @@ public final class ${NAME}<TKey ,TValue extends Comparable<TValue> >
 		#parse("throwdontuse")
 		}
 	
-	private ${NAME}(@NotNull  ${CollectionType}< TKey,TValue > backingImmutableMap )
+	private ${NAME}(@NonNull  ${CollectionType}< TKey,TValue > backingImmutableMap )
 		{
-		checkNotNull(backingImmutableMap);
 		this.delegate = backingImmutableMap;
 		
 	    /*
@@ -91,7 +91,7 @@ public final class ${NAME}<TKey ,TValue extends Comparable<TValue> >
 		*/
 		}
 	
-    public static  <EKey,EValue extends Comparable<EValue>> ${NAME}<EKey,EValue> of(@NotNull  ${CollectionType}< EKey,EValue > backingImmutableMap )
+    public static  <EKey,EValue extends Comparable<EValue>> ${NAME}<EKey,EValue> of(@NonNull  ${CollectionType}< EKey,EValue > backingImmutableMap )
         {
         return new  ${NAME}<EKey,EValue>(backingImmutableMap);
         }
@@ -156,7 +156,7 @@ public final class ${NAME}<TKey ,TValue extends Comparable<TValue> >
 	 *
 	 * }</pre> ПОМНИ СГЕНЕРИТЬ JAVADOC MAC8+fixDocComment И УБРАТЬ ЭТОТ ТЕКСТ
 	 
-	  @throws NullPointerException if argument nullable
+	 @throws NullPointerException if argument nullable
      @throws IllegalArgumentException if argument empty
 	 
 	 */

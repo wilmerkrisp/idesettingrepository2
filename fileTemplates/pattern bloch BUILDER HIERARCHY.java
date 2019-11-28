@@ -10,17 +10,17 @@ public abstract class Pizza
     */
     abstract static class Builder<T extends Builder<T>> 
         {
-    EnumSet<Topping> toppings = EnumSet.noneOf(Topping.class); 
-    public T addTopping(Topping topping) 
-        {
-        toppings.add(Objects.requireNonNull(topping));
-        return self(); 
-        }
-    abstract Pizza build();
-    // Subclasses must override this method to return "this" 
-    protected abstract T self();
-
-    } 
+        EnumSet<Topping> toppings = EnumSet.noneOf(Topping.class); 
+        public T addTopping(Topping topping) 
+            {
+            toppings.add(Objects.requireNonNull(topping));
+            return self(); 
+            }
+        abstract Pizza build();
+        // Subclasses must override this method to return "this" 
+        protected abstract T self();
+    
+        } 
     Pizza(Builder<?> builder) 
         { 
         toppings = builder.toppings.clone(); // See Item 50 

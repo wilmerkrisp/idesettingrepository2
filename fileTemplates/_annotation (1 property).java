@@ -6,15 +6,13 @@ import java.lang.annotation.*;
 #parse("File Header.java")
 
 
-/**                             
+/** <pre>                            
 *   monomial annotation 
 *   !CHANGE_ME_DESCRIPTION!
 
-*   @author     wilmer
-*   @version    1.0
-*   @since      1.0 wilmer draft
+
 *
-* <pre>{@code
+* {@code
 *
 *
 * example 1
@@ -37,14 +35,11 @@ import java.lang.annotation.*;
 *			${NAME} v_anno=v_m.getAnnotation(${NAME}.class)
 *			log.debug( "VV_class f_method: "+ v_anno.value() );
 *
-
-
-
- 
-	
-*
 *
 * }</pre>
+*   @author     wilmer
+*   @version    1.0
+*   @since      1.0 wilmer draft
 */
 @Inherited /*all subclasses inherit this annotation*/
 @Target( { ElementType.ANNOTATION_TYPE, ElementType .CONSTRUCTOR, ElementType .FIELD, ElementType .LOCAL_VARIABLE, ElementType .METHOD, ElementType .PACKAGE, ElementType .PARAMETER, ElementType .TYPE, ElementType .TYPE_PARAMETER, ElementType .TYPE_USE})
@@ -53,7 +48,7 @@ import java.lang.annotation.*;
 	{
 	
 	
-	/**                         
+	/**<pre>                         
 	*   parameter 3 (for monomial annotation, 1 argument value)
     *   !CHANGE_ME_DESCRIPTION!
     *

@@ -246,7 +246,7 @@ public class ${NAME} implements InvocationHandler
 		// call real object
 		Object v_rezult = p_method.invoke( c_proxied_object ,
 		                                   p_args );
-		
+	
 		return null;
 		}
 	}

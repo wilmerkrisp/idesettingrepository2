@@ -7,12 +7,14 @@
 
  
 
-/**<pre>                             
+/** <pre>                            
 *   interface simple
 *   !CHANGE_ME_DESCRIPTION!
 *
 
-
+*   @author     wilmer
+*   @version    1.0
+*   @since      1.0 wilmer draft
 
 
 #parse("iclassforinheritance.java") 
@@ -26,41 +28,16 @@
 *              VC_somesubclass                  implements ${NAME}
 *              VI_somesubinterface              extends    ${NAME}    
 *              VCG_somesubclass< T >        implements ${NAME}
-*              VIG_somesubinterface< T >    extends    ${NAME}   
+*              VIG_somesubinterface< T >    extends    ${NAME}
+*
+*          
 *
 * }</pre>
-*   @author     wilmer
-*   @version    1.0
-*   @since      1.0 wilmer draft
 */                                                                                                   
-public interface ${NAME} 
+public interface ${NAME}  extends Entity<${ID}>
     {   
      
-
-#parse("imethodprivate.java")
-
-
-#parse("imethodoptional.java")
-  
-   
-    /**                         
-    *   method need implementation
-    *   !CHANGE_ME_DESCRIPTION!
-    *
-    * <pre>{@code                   
-    *
-    *
-    * example 1
-    *
-    *           v_obj.f_test();
-    *
-    *       
-    *
-    * }</pre>
-    */
-    public abstract void    f_test(); 
-
-    
+    //any methods
    
     
     }
