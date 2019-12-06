@@ -70,9 +70,6 @@
   <action id="CompareClipboardWithSelection">
     <keyboard-shortcut first-keystroke="meta f8" />
   </action>
-  <action id="CompareFileWithEditor">
-    <keyboard-shortcut first-keystroke="meta f7" />
-  </action>
   <action id="CompileDirty" />
   <action id="Console.Oracle.DbmsOutput" />
   <action id="Console.TableResult.ColumnsList" />
@@ -97,6 +94,7 @@
     <keyboard-shortcut first-keystroke="ctrl d" />
     <keyboard-shortcut first-keystroke="meta alt c" />
     <keyboard-shortcut first-keystroke="meta 4" />
+    <keyboard-shortcut first-keystroke="meta f6" />
   </action>
   <action id="Debugger.EditArrayFilter" />
   <action id="Debugger.EditFrameSource" />
@@ -264,6 +262,7 @@
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="shift f6" />
     <keyboard-shortcut first-keystroke="shift f1" />
+    <keyboard-shortcut first-keystroke="meta f3" />
   </action>
   <action id="ReplaceInPath">
     <keyboard-shortcut first-keystroke="shift meta r" />
@@ -281,6 +280,7 @@
     <keyboard-shortcut first-keystroke="meta alt x" />
     <keyboard-shortcut first-keystroke="meta 3" />
     <keyboard-shortcut first-keystroke="meta down" />
+    <keyboard-shortcut first-keystroke="meta f5" />
   </action>
   <action id="RunClass">
     <keyboard-shortcut first-keystroke="shift ctrl r" />
@@ -289,6 +289,7 @@
   <action id="RunDashboard.EditConfiguration" />
   <action id="RunToCursor">
     <keyboard-shortcut first-keystroke="meta 7" />
+    <keyboard-shortcut first-keystroke="meta f7" />
   </action>
   <action id="Scala.ShowImplicits">
     <keyboard-shortcut first-keystroke="shift ctrl alt equals" />
@@ -309,9 +310,7 @@
   <action id="ShelvedChanges.Rename">
     <keyboard-shortcut first-keystroke="shift f6" />
   </action>
-  <action id="ShowBlankDiffWindow">
-    <keyboard-shortcut first-keystroke="meta f6" />
-  </action>
+  <action id="ShowBookmarks" />
   <action id="ShowIntentionActions">
     <keyboard-shortcut first-keystroke="alt enter" />
     <keyboard-shortcut first-keystroke="alt altGraph enter" />
@@ -356,6 +355,12 @@
   <action id="XPathView.Actions.Evaluate" />
   <action id="XPathView.Actions.FindByExpression" />
   <action id="XPathView.Actions.ShowPath" />
+  <action id="android.deploy.ApplyChanges">
+    <keyboard-shortcut first-keystroke="ctrl meta r" />
+  </action>
+  <action id="android.deploy.CodeSwap">
+    <keyboard-shortcut first-keystroke="shift ctrl meta r" />
+  </action>
   <action id="codeNavigator.classCloud.zoomOut" />
   <action id="codeNavigator.uml.diagramZoomOut" />
   <action id="codeNavigator.zoomOut" />
