@@ -1,4 +1,4 @@
-<keymap version="1" name="Default for Windows copy" parent="$default">
+<keymap version="1" name="wilmerWindows" parent="$default">
   <action id="EditorLookupDown" />
   <action id="EditorScrollDown" />
   <action id="FullyExpandTreeNode">
@@ -9,6 +9,10 @@
   <action id="MethodOverloadSwitchDown" />
   <action id="SearchEverywhere.NavigateToNextGroup">
     <keyboard-shortcut first-keystroke="page_down" />
+  </action>
+  <action id="ShowSettings">
+    <keyboard-shortcut first-keystroke="ctrl alt s" />
+    <keyboard-shortcut first-keystroke="alt comma" />
   </action>
   <action id="UpdateRunningApplication" />
   <action id="android.deploy.ApplyChanges">
