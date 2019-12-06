@@ -1,20 +1,106 @@
 <keymap version="1" name="wilmerWindows" parent="$default">
+  <action id="Arrangement.Alias.Rule.Edit" />
+  <action id="Arrangement.Rule.Edit" />
+  <action id="ChangesView.Rename">
+    <keyboard-shortcut first-keystroke="shift f6" />
+  </action>
+  <action id="CodeCompletion">
+    <keyboard-shortcut first-keystroke="ctrl space" />
+    <keyboard-shortcut first-keystroke="f3" />
+  </action>
+  <action id="Console.TableResult.EditValue">
+    <keyboard-shortcut first-keystroke="enter" />
+    <keyboard-shortcut first-keystroke="alt enter" />
+  </action>
+  <action id="Console.TableResult.NavigateAction" />
+  <action id="ContextHelp" />
+  <action id="CopyElement" />
+  <action id="DSM.OpenInEditor" />
+  <action id="DatabaseView.CopyTable" />
+  <action id="Debugger.EditArrayFilter" />
+  <action id="Debugger.EditCustomField" />
+  <action id="Debugger.EditFrameSource" />
+  <action id="DomCollectionControl.Edit" />
+  <action id="DomElementsTreeView.GotoDomElementDeclarationAction" />
+  <action id="EditSource" />
   <action id="EditorLookupDown" />
   <action id="EditorScrollDown" />
+  <action id="ExternalSystem.OpenConfig" />
+  <action id="FindInPath">
+    <keyboard-shortcut first-keystroke="shift ctrl f" />
+    <keyboard-shortcut first-keystroke="f6" />
+  </action>
+  <action id="FindNext">
+    <keyboard-shortcut first-keystroke="ctrl l" />
+  </action>
+  <action id="FindUsages">
+    <keyboard-shortcut first-keystroke="alt f7" />
+    <keyboard-shortcut first-keystroke="f5" />
+  </action>
   <action id="FullyExpandTreeNode">
     <keyboard-shortcut first-keystroke="multiply" />
     <keyboard-shortcut first-keystroke="ctrl down" />
     <keyboard-shortcut first-keystroke="f24" />
   </action>
+  <action id="Git.Reword.Commit">
+    <keyboard-shortcut first-keystroke="shift f6" />
+  </action>
+  <action id="GotoNextError" />
+  <action id="GotoNextIncompletePropertyAction" />
+  <action id="Graph.ApplyCurrentLayout" />
+  <action id="Graph.Faces.OpenSelectedPages" />
+  <action id="GuiDesigner.EditComponent" />
+  <action id="GuiDesigner.EditGroup" />
+  <action id="InsertLiveTemplate">
+    <keyboard-shortcut first-keystroke="ctrl j" />
+    <keyboard-shortcut first-keystroke="f1" />
+  </action>
+  <action id="Jdbc.OpenEditor" />
   <action id="MethodOverloadSwitchDown" />
+  <action id="Move" />
+  <action id="NavBar-navigate" />
+  <action id="NextDiff" />
+  <action id="OpenModuleSettings" />
+  <action id="ProjectViewEditSource" />
+  <action id="ReformatCode">
+    <keyboard-shortcut first-keystroke="ctrl alt l" />
+    <keyboard-shortcut first-keystroke="f8" />
+  </action>
+  <action id="RemoteHostView.EditSource" />
+  <action id="ReplaceInPath">
+    <keyboard-shortcut first-keystroke="shift ctrl r" />
+    <keyboard-shortcut first-keystroke="f7" />
+  </action>
   <action id="SearchEverywhere.NavigateToNextGroup">
     <keyboard-shortcut first-keystroke="page_down" />
+  </action>
+  <action id="ShelvedChanges.Rename">
+    <keyboard-shortcut first-keystroke="shift f6" />
+  </action>
+  <action id="ShowIntentionActions">
+    <keyboard-shortcut first-keystroke="alt enter" />
+    <keyboard-shortcut first-keystroke="f4" />
+  </action>
+  <action id="ShowProjectStructureSettings">
+    <keyboard-shortcut first-keystroke="shift ctrl alt s" />
+    <keyboard-shortcut first-keystroke="alt semicolon" />
   </action>
   <action id="ShowSettings">
     <keyboard-shortcut first-keystroke="ctrl alt s" />
     <keyboard-shortcut first-keystroke="alt comma" />
   </action>
+  <action id="SmartTypeCompletion">
+    <keyboard-shortcut first-keystroke="shift ctrl space" />
+    <keyboard-shortcut first-keystroke="f2" />
+  </action>
+  <action id="Sql.EditParameter" />
+  <action id="StepInto" />
+  <action id="StepOver" />
   <action id="UpdateRunningApplication" />
+  <action id="Vcs.EditSource" />
+  <action id="XDebugger.EditWatch" />
+  <action id="XDebugger.JumpToSource" />
+  <action id="XDebugger.SetValue" />
   <action id="android.deploy.ApplyChanges">
     <keyboard-shortcut first-keystroke="ctrl f10" />
   </action>
