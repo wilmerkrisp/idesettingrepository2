@@ -67,6 +67,9 @@
     <keyboard-shortcut first-keystroke="meta 9" />
     <keyboard-shortcut first-keystroke="f10" />
   </action>
+  <action id="CompareClipboardWithSelection">
+    <keyboard-shortcut first-keystroke="meta f8" />
+  </action>
   <action id="CompareFileWithEditor">
     <keyboard-shortcut first-keystroke="meta f7" />
   </action>
@@ -175,6 +178,7 @@
   </action>
   <action id="Git.Merge">
     <keyboard-shortcut first-keystroke="meta alt f10" />
+    <keyboard-shortcut first-keystroke="meta f9" />
   </action>
   <action id="Git.Reword.Commit">
     <keyboard-shortcut first-keystroke="shift f6" />
@@ -352,6 +356,12 @@
   <action id="XPathView.Actions.Evaluate" />
   <action id="XPathView.Actions.FindByExpression" />
   <action id="XPathView.Actions.ShowPath" />
+  <action id="android.deploy.ApplyChanges">
+    <keyboard-shortcut first-keystroke="ctrl meta r" />
+  </action>
+  <action id="android.deploy.CodeSwap">
+    <keyboard-shortcut first-keystroke="shift ctrl meta r" />
+  </action>
   <action id="codeNavigator.classCloud.zoomOut" />
   <action id="codeNavigator.uml.diagramZoomOut" />
   <action id="codeNavigator.zoomOut" />
