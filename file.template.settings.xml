@@ -20,11 +20,17 @@
       <template name="_static class.java" reformat="true" live-template-enabled="true" />
       <template name="_static class (SERVICE).java" reformat="true" live-template-enabled="true" />
       <template name="_tuple 9 IMmutable GENERIC GOOGLE.java" reformat="true" live-template-enabled="true" />
+      <template name="_tuple 9 IMmutable GENERIC LOMBOK.java" reformat="true" live-template-enabled="true" />
       <template name="_tuple 9 IMmutable GOOGLE.java" reformat="true" live-template-enabled="true" />
+      <template name="_tuple 9 IMmutable LOMBOK.java" reformat="true" live-template-enabled="true" />
+      <template name="_tuple 9 IMmutable MONO1 purelazy.java" reformat="true" live-template-enabled="true" />
+      <template name="_tuple 9 IMmutable MONO2 bad.java" reformat="true" live-template-enabled="true" />
       <template name="_tuple 9 MUtable GOOGLE.java" reformat="true" live-template-enabled="true" />
+      <template name="_tuple 9 MUtable LOMBOK DTO.java" reformat="true" live-template-enabled="true" />
       <template name="_tuple interface immutable.java" reformat="true" live-template-enabled="true" />
       <template name="_tuple interface mutable.java" reformat="true" live-template-enabled="true" />
       <template name="_VTEST_class_TEST.java" reformat="true" live-template-enabled="true" />
+      <template name="experimental_collectionn MUtable GOOGLE.java" reformat="true" live-template-enabled="true" />
       <template name="helper class.java" reformat="true" live-template-enabled="true" />
       <template name="OLD_VA_class_abstract.java" reformat="true" live-template-enabled="true" />
       <template name="OLD_VC_class_mutable [FULL].java" reformat="true" live-template-enabled="true" />
@@ -42,6 +48,8 @@
       <template name="OLD_VV_class_nonmutable.java" reformat="true" live-template-enabled="true" />
       <template name="OLD_VV_class_nonmutableAUTOCLOSE [FULL].java" reformat="true" live-template-enabled="true" />
       <template name="OLD_VVG_class_nonmutable_GENERIC.java" reformat="true" live-template-enabled="true" />
+      <template name="pattern bloch FORWARDING.java" reformat="true" live-template-enabled="true" />
+      <template name="pattern design builder.java" reformat="true" live-template-enabled="true" />
       <template name="pattern design collection from abstract ITERATOR anonym.java" reformat="true" live-template-enabled="true" />
       <template name="pattern design collection from abstract ITERATOR inner.java" reformat="true" live-template-enabled="true" />
       <template name="pattern design collection from interface.java" reformat="true" live-template-enabled="true" />
@@ -51,6 +59,16 @@
       <template name="pattern design proxy (reflection java api  dynamic proxy).java" reformat="true" live-template-enabled="true" />
       <template name="pattern design singleton VC_singleton.java" reformat="true" live-template-enabled="true" />
       <template name="pattern design template method VI_interface.java" reformat="true" live-template-enabled="true" />
+      <template name="REACTIVE DB e1  Entity helper class.java" reformat="true" live-template-enabled="true" />
+      <template name="REACTIVE DB e2 My  entity interface.java" reformat="true" live-template-enabled="true" />
+      <template name="REACTIVE DB e3 DefaultMy  entity implementation.java" reformat="true" live-template-enabled="true" />
+      <template name="REACTIVE DB r1 MyRepository interface.java" reformat="true" live-template-enabled="true" />
+      <template name="REACTIVE DB r2 ForwardingReactiveCrudRepository common helper class.java" reformat="true" live-template-enabled="true" />
+      <template name="REACTIVE DB r3 MyRepositoryAdapter  imp to intface.java" reformat="true" live-template-enabled="true" />
+      <template name="REACTIVE DB r4 DefaultMyRepository  implementation.java" reformat="true" live-template-enabled="true" />
+      <template name="REACTIVE DB r5 MergeableSimpleR2dbcRepository common helper.java" reformat="true" live-template-enabled="true" />
+      <template name="REACTIVE DB test1 MyRepositoryTest.java" reformat="true" live-template-enabled="true" />
+      <template name="REACTIVE DB test2 old.java" reformat="true" live-template-enabled="true" />
       <template name="Thread1.java" reformat="true" live-template-enabled="true" />
       <template name="Thread2.java" reformat="true" live-template-enabled="true" />
       <template name="v1 collection LIST IMmutable.java" reformat="true" live-template-enabled="true" />
