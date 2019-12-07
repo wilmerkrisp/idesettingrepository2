@@ -32,6 +32,9 @@
     <option name="WRAP_ON_TYPING" value="0" />
     <option name="RIGHT_MARGIN" value="72" />
   </MarkdownNavigatorCodeStyleSettings>
+  <MultiMarkdownCodeStyleSettings>
+    <option name="RIGHT_MARGIN" value="72" />
+  </MultiMarkdownCodeStyleSettings>
   <yaml>
     <option name="ALIGN_VALUES_PROPERTIES" value="2" />
     <option name="SEQUENCE_ON_NEW_LINE" value="true" />
