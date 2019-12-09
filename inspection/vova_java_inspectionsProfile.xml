@@ -513,7 +513,7 @@
   <inspection_tool class="ClassMayBeInterface" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
   <inspection_tool class="ClassName" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
   <inspection_tool class="ClassNameDiffersFromFileName" enabled="true" level="WARNING" enabled_by_default="true" />
-  <inspection_tool class="ClassNamePrefixedWithPackageName" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="ClassNamePrefixedWithPackageName" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
   <inspection_tool class="ClassNameSameAsAncestorName" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ClassNestingDepth" enabled="true" level="WEAK WARNING" enabled_by_default="true">
     <option name="m_limit" value="1" />
@@ -757,7 +757,9 @@
     <option name="ignoreThrowables" value="true" />
     <option name="commentsAreContent" value="true" />
   </inspection_tool>
-  <inspection_tool class="EmptyDirectory" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+  <inspection_tool class="EmptyDirectory" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+    <option name="onlyReportDirectoriesUnderSourceRoots" value="true" />
+  </inspection_tool>
   <inspection_tool class="EmptyEventHandler" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="EmptyInitializer" enabled="true" level="INFORMATION" enabled_by_default="true" />
   <inspection_tool class="EmptyRange" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -776,7 +778,7 @@
   <inspection_tool class="EqualsHashCodeCalledOnUrl" enabled="true" level="INFORMATION" enabled_by_default="true" />
   <inspection_tool class="EqualsOrHashCode" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="EqualsUsesNonFinalVariable" enabled="true" level="WARNING" enabled_by_default="true" />
-  <inspection_tool class="ErrorRethrown" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="ErrorRethrown" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
   <inspection_tool class="ExceptionCaughtLocallyJS" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="ExceptionFromCatchWhichDoesntWrap" enabled="true" level="WEAK WARNING" enabled_by_default="true">
     <option name="ignoreGetMessage" value="false" />
@@ -1188,6 +1190,7 @@
   <inspection_tool class="JSXNamespaceValidation" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
   <inspection_tool class="JUnit3StyleTestMethodInJUnit4Class" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="JUnit5Converter" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="Java9RedundantRequiresStatement" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="JavaCollectionsStaticMethod" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
   <inspection_tool class="JavaCollectionsStaticMethodOnImmutableList" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="JavaLangImport" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -1398,8 +1401,8 @@
   <inspection_tool class="NewMethodNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
     <extension name="InstanceMethodNamingConvention" enabled="true">
       <option name="m_regex" value="[a-z][A-Za-z\d]*[_]?" />
-      <option name="m_minLength" value="4" />
-      <option name="m_maxLength" value="32" />
+      <option name="m_minLength" value="3" />
+      <option name="m_maxLength" value="42" />
     </extension>
     <extension name="JUnit4MethodNamingConvention" enabled="true" />
   </inspection_tool>
@@ -1490,7 +1493,7 @@
   <inspection_tool class="OctalAndDecimalIntegersMixed" enabled="true" level="INFORMATION" enabled_by_default="true" />
   <inspection_tool class="OctalIntegerJS" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="OldGitHubTaskItemReference" enabled="false" level="WARNING" enabled_by_default="false" />
-  <inspection_tool class="OnDemandImport" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+  <inspection_tool class="OnDemandImport" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
   <inspection_tool class="OneButtonGroup" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="OneWayWebMethod" enabled="false" level="ERROR" enabled_by_default="false" />
   <inspection_tool class="OptionalExpectation" enabled="false" level="INFORMATION" enabled_by_default="false" />
@@ -1910,6 +1913,7 @@
   <inspection_tool class="TypeScriptValidateTypes" enabled="false" level="ERROR" enabled_by_default="false" />
   <inspection_tool class="TypescriptExplicitMemberType" enabled="false" level="INFORMATION" enabled_by_default="false" />
   <inspection_tool class="UElementAsPsi" enabled="false" level="WARNING" enabled_by_default="false" />
+  <inspection_tool class="UNUSED_IMPORT" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="UnaryPlus" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="UndesirableClassUsage" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="UnhandledExceptionInJSP" enabled="false" level="WARNING" enabled_by_default="false" />
