@@ -1,5 +1,5 @@
 <templateSet group="VV_test">
-  <template name="method test" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/* &#10; &#10; *      1) используем проверки&#10; *              assertEquals( a,b );          assertNotEquals( a,b );&#10; *              assertTrue( true );           assertFalse( false );&#10; *              assertNull( null );           assertNotNull( null );&#10; *&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;/**&#10; *      test method&#10; *      !CHANGE_ME_DESCRIPTION!&#10; *      &#10; * &lt;pre&gt;{@code&#10; *&#10;&#10; *&#10; *&#10; *&#10; * }&lt;/pre&gt;&#10; */&#10;@Test&#10;@DisplayName(&quot;description of the test&quot;)&#10;public void $method$_test( )&#10;{&#10;&#10;//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10;assertEquals( a,b );          assertNotEquals( a,b );&#10;assertTrue( true );           assertFalse( false );&#10;assertNull( null );           assertNotNull( null );&#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;$END$&#10;&#9;&#10;}&#10;&#10;&#10;" description="class method FOR TESTING" toReformat="false" toShortenFQNames="true">
+  <template name="method test" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/* &#10; &#10; *      1) используем проверки&#10; *              assertEquals( a,b );          assertNotEquals( a,b );&#10; *              assertTrue( true );           assertFalse( false );&#10; *              assertNull( null );           assertNotNull( null );&#10; *&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;/**&#10; *      test method&#10; *      !CHANGE_ME_DESCRIPTION!&#10; *      &#10; * &lt;pre&gt;{@code&#10; *&#10;&#10; *&#10; *&#10; *&#10; * }&lt;/pre&gt;&#10; */&#10;@Test&#10;@DisplayName(&quot;description of the test&quot;)&#10;public void $method$_test( )&#10;{&#10;&#10;//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10;assertEquals( a,b );          assertNotEquals( a,b );&#10;assertTrue( true );           assertFalse( false );&#10;assertNull( null );           assertNotNull( null );&#10;&#10;String result = &quot;one&quot;;&#10;assertThat( result , is( &quot;one&quot; ) );&#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;$END$&#10;&#9;&#10;}&#10;&#10;&#10;" description="class method FOR TESTING" toReformat="false" toShortenFQNames="true">
     <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
@@ -10,7 +10,7 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="test assert that" value="assertThat(  ,is(3) );" description="" toReformat="false" toShortenFQNames="true">
+  <template name="test assert that" value="/*&#10;import org.junit.jupiter.api.Test;&#10;&#10;import static org.hamcrest.core.Is.is;&#10;import static org.junit.Assert.assertThat;&#10;*/&#10;String result = &quot;one&quot;;&#10;assertThat( result , is( &quot;one&quot; ) );" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
