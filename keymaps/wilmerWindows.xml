@@ -86,6 +86,10 @@
     <keyboard-shortcut first-keystroke="multiply" />
     <keyboard-shortcut first-keystroke="ctrl down" />
   </action>
+  <action id="Generate">
+    <keyboard-shortcut first-keystroke="alt insert" />
+    <keyboard-shortcut first-keystroke="alt n" />
+  </action>
   <action id="Git.Branches">
     <keyboard-shortcut first-keystroke="shift ctrl back_quote" />
     <keyboard-shortcut first-keystroke="ctrl f10" />
