@@ -52,9 +52,6 @@
     <keyboard-shortcut first-keystroke="ctrl f6" />
     <keyboard-shortcut first-keystroke="f18" />
   </action>
-  <action id="Debugger.CreateRenderer">
-    <keyboard-shortcut first-keystroke="ctrl n" />
-  </action>
   <action id="Debugger.EditArrayFilter" />
   <action id="Debugger.EditCustomField" />
   <action id="Debugger.EditFrameSource" />
@@ -95,6 +92,7 @@
   <action id="Generate">
     <keyboard-shortcut first-keystroke="alt insert" />
     <keyboard-shortcut first-keystroke="alt n" />
+    <keyboard-shortcut first-keystroke="ctrl n" />
   </action>
   <action id="Git.Branches">
     <keyboard-shortcut first-keystroke="shift ctrl back_quote" />
