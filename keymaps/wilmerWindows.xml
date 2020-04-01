@@ -52,6 +52,9 @@
     <keyboard-shortcut first-keystroke="ctrl f6" />
     <keyboard-shortcut first-keystroke="f18" />
   </action>
+  <action id="Debugger.CreateRenderer">
+    <keyboard-shortcut first-keystroke="ctrl n" />
+  </action>
   <action id="Debugger.EditArrayFilter" />
   <action id="Debugger.EditCustomField" />
   <action id="Debugger.EditFrameSource" />
@@ -68,6 +71,9 @@
     <keyboard-shortcut first-keystroke="f12" />
   </action>
   <action id="ExternalSystem.OpenConfig" />
+  <action id="FileChooser.NewFolder">
+    <keyboard-shortcut first-keystroke="alt insert" />
+  </action>
   <action id="FileStructurePopup" />
   <action id="FindInPath">
     <keyboard-shortcut first-keystroke="shift ctrl f" />
@@ -107,6 +113,8 @@
   <action id="Git.Reword.Commit">
     <keyboard-shortcut first-keystroke="shift f6" />
   </action>
+  <action id="GotoChangedFile" />
+  <action id="GotoClass" />
   <action id="GotoDeclaration">
     <keyboard-shortcut first-keystroke="ctrl b" />
     <mouse-shortcut keystroke="control button1" />
