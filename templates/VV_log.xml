@@ -80,7 +80,7 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="log print" value="System.out.println(&quot;$class$ $method$ &quot; $END$);" description="print" toReformat="false" toShortenFQNames="true">
+  <template name="print  CLASSIC" value="System.out.println(&quot;$class$ $method$ &quot; $END$);" description="print" toReformat="false" toShortenFQNames="true">
     <variable name="class" expression="className()" defaultValue="" alwaysStopAt="false" />
     <variable name="method" expression="methodName()" defaultValue="" alwaysStopAt="false" />
     <context>
@@ -169,7 +169,7 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="log pring ::reference" value="System.out::println" description="System.out::println" toReformat="false" toShortenFQNames="true">
+  <template name="print  pring ::reference" value="System.out::println" description="System.out::println" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
@@ -185,19 +185,19 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="log_ debug" value="logger_.atFine().log(&quot;$END$&quot;);" description="flogger debug" toReformat="false" toShortenFQNames="true">
+  <template name="print log_ debug" value="logger_.atFine().log(&quot;$END$&quot;);" description="flogger debug" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="log_ info" value="logger_.atInfo().log(&quot; $END$&quot;);" description="flogger info" toReformat="false" toShortenFQNames="true">
+  <template name="print log_ info" value="logger_.atInfo().log(&quot; $END$&quot;);" description="flogger info" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="log_ error" value="logger_.atSevere().log(&quot;$END$&quot;);" description="flogger error" toReformat="false" toShortenFQNames="true">
+  <template name="print log_ error" value="logger_.atSevere().log(&quot;$END$&quot;);" description="flogger error" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
@@ -271,7 +271,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="log  log::reference" value="logger_::info" description="logger_.atInfo()::log" toReformat="false" toShortenFQNames="true">
+  <template name="print  log::reference" value="logger_::info" description="logger_.atInfo()::log" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
