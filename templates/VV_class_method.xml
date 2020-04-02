@@ -128,7 +128,7 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="method public static" value="public static final List&lt;String&gt;    $f_method$(String string)&#10;&#9;{&#10;&#9;if( string == null || string.isBlank() || !isConsistent() )&#10;&#9;&#9;{&#10;&#9;&#9;logAtWarning( &quot;$f_method$: string param must not ne null or empty&quot; );&#10;&#9;&#9;return List.&lt;String&gt;of();&#10;&#9;&#9;}&#10;&#9;&#10;&#9;log_( &quot;$f_method$({})&quot;,string );&#10;&#9;&#10;&#9;var list=List.&lt;String&gt;of(string);&#10;&#9;assert !list.isEmpty()  : &quot;CCheck invariant - collection should not be empty.&quot; ;&#10;&#9;return list;&#10;&#9;} " description="SIMPLIEST" toReformat="false" toShortenFQNames="true">
+  <template name="method public static" value="public static final List&lt;String&gt;    $f_method$(String string)&#10;&#9;{&#10;&#9;if( string == null || string.isBlank() || !isConsistent() )&#10;&#9;&#9;{&#10;&#9;&#9;logAtWarning( &quot;$f_method$: string param must not ne null or empty&quot; );&#10;&#9;&#9;return List.&lt;String&gt;of();&#10;&#9;&#9;}&#10;&#9;&#10;&#9;log( &quot;$f_method$({})&quot;,string );&#10;&#9;&#10;&#9;var list=List.&lt;String&gt;of(string);&#10;&#9;assert !list.isEmpty()  : &quot;CCheck invariant - collection should not be empty.&quot; ;&#10;&#9;return list;&#10;&#9;} " description="SIMPLIEST" toReformat="false" toShortenFQNames="true">
     <variable name="f_method" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
