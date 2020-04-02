@@ -1,5 +1,5 @@
 <templateSet group="VV_stream">
-  <template name="stream parall-&gt;nonparall" value=".sequental().ordered()." description="" toReformat="false" toShortenFQNames="true">
+  <template name="new stream parall-&gt;nonparall" value=".sequental().ordered()." description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
@@ -12,7 +12,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="stream nonparall-&gt;parall" value=".parallel().unordered()." description="" toReformat="false" toShortenFQNames="true">
+  <template name="new stream nonparall-&gt;parall" value=".parallel().unordered()." description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
@@ -33,7 +33,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="stream to arr" value="$arr$.toArray(MyClass[]::new); &#10;$END$" description="loop forEach STREAM" toReformat="false" toShortenFQNames="true">
+  <template name="ew stream to arr" value="$arr$.toArray(MyClass[]::new); &#10;$END$" description="loop forEach STREAM" toReformat="false" toShortenFQNames="true">
     <variable name="arr" expression="variableOfType(&quot;java.util.stream.Stream&quot;)" defaultValue="arr" alwaysStopAt="true" />
     <context>
       <option name="JAVA_EXPRESSION" value="true" />

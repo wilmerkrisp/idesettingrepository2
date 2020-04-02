@@ -19,7 +19,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="exception3" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/* exception&#10;&#10; need  THROWS or need outer TRY-CATCH block&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;throw new Exception( &quot; cause $END$&quot; );&#10;" description="throw generate exception CHECKED" toReformat="false" toShortenFQNames="true">
+  <template name="err exception3" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/* exception&#10;&#10; need  THROWS or need outer TRY-CATCH block&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;throw new Exception( &quot; cause $END$&quot; );&#10;" description="throw generate exception CHECKED" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
@@ -88,7 +88,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="exception2" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/* exception&#10; &#10;stacktrace attached to new exception&#10;for runtime exception you NO need  THROWS or NO need outer try-catch  block&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;throw new VX_box_exception( &quot; cause $END$&quot;,$exc$ );" description="rethrow / throw generate exception RUNTIME" toReformat="false" toShortenFQNames="true">
+  <template name="err exception2" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/* exception&#10; &#10;stacktrace attached to new exception&#10;for runtime exception you NO need  THROWS or NO need outer try-catch  block&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;throw new VX_box_exception( &quot; cause $END$&quot;,$exc$ );" description="rethrow / throw generate exception RUNTIME" toReformat="false" toShortenFQNames="true">
     <variable name="exc" expression="variableOfType(&quot;java.lang.Exception&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
@@ -107,7 +107,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="exception4" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10; * example 1&#10; *&#10; *              throw new ${NAME}(  );&#10; *              throw new ${NAME}(&quot; my exception data&quot;  );&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;/**&#10; *      my exception class&#10; *      !CHANGE_ME_DESCRIPTION!&#10; *      &#10; * &lt;pre&gt;{@code&#10; *&#10; *&#10;&#10; *&#10; *&#10; * example 2&#10; *&#10; *&#10; *&#10; * }&lt;/pre&gt;&#10; */&#10;class $VX_m$ extends RuntimeException{}" description="throw generate exception CLASS {EXPERIMENTAL}" toReformat="false" toShortenFQNames="true">
+  <template name="err exception4" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10; * example 1&#10; *&#10; *              throw new ${NAME}(  );&#10; *              throw new ${NAME}(&quot; my exception data&quot;  );&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;/**&#10; *      my exception class&#10; *      !CHANGE_ME_DESCRIPTION!&#10; *      &#10; * &lt;pre&gt;{@code&#10; *&#10; *&#10;&#10; *&#10; *&#10; * example 2&#10; *&#10; *&#10; *&#10; * }&lt;/pre&gt;&#10; */&#10;class $VX_m$ extends RuntimeException{}" description="throw generate exception CLASS {EXPERIMENTAL}" toReformat="false" toShortenFQNames="true">
     <variable name="VX_m" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
@@ -119,7 +119,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="exception1" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/* exception&#10; &#10;stacktrace attached to new exception&#10;for runtime exception you NO need  THROWS or NO need outer try-catch  block&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;throw new IllegalStateException( &quot;marker&quot; );" description="throw new IllegalStateException( &quot;marker&quot; );" toReformat="false" toShortenFQNames="true">
+  <template name="err exception1" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/* exception&#10; &#10;stacktrace attached to new exception&#10;for runtime exception you NO need  THROWS or NO need outer try-catch  block&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;throw new IllegalStateException( &quot;marker&quot; );" description="throw new IllegalStateException( &quot;marker&quot; );" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
@@ -149,7 +149,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="exception unsupportedOperation" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/* unsuppirted exception method&#10;&#10; *       helper method fo exceprion&#10; *       throw exception_();&#10; *&#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;private static final UnsupportedOperationException exception_()&#10;{&#10;return new UnsupportedOperationException( &quot;The collection is immutable. Don't use CrUD methods.&quot; );&#10;}&#10;" description="create method for exception unsupportedOperation" toReformat="false" toShortenFQNames="true">
+  <template name="err exception unsupportedOperation" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/* unsuppirted exception method&#10;&#10; *       helper method fo exceprion&#10; *       throw exception_();&#10; *&#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;private static final UnsupportedOperationException exception_()&#10;{&#10;return new UnsupportedOperationException( &quot;The collection is immutable. Don't use CrUD methods.&quot; );&#10;}&#10;" description="create method for exception unsupportedOperation" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_DECLARATION" value="true" />
     </context>
@@ -175,7 +175,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="assert simple" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/* &#10;&#10;&#10;- use assertions:&#10;&#9;- in private methods&#10;&#9;- for situations that can never occur&#10;&#10;- if FALSE then assert FIRE&#10;&#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;assert false:&quot;Assert message&quot;;&#10;" description="make assertion" toReformat="false" toShortenFQNames="true">
+  <template name="err assert simple" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/* &#10;&#10;&#10;- use assertions:&#10;&#9;- in private methods&#10;&#9;- for situations that can never occur&#10;&#10;- if FALSE then assert FIRE&#10;&#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;assert false:&quot;Assert message&quot;;&#10;" description="make assertion" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_DECLARATION" value="true" />
     </context>
@@ -203,68 +203,68 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="assert argument /private method/string" value="assert $VAR$!=null&amp;&amp; !$VAR$.isBlank() : &quot;Argument should not be empty.&quot; );&#10;&#10;$END$&#10;&#10;" description="assert !=null  !isBlank" toReformat="false" toShortenFQNames="true">
+  <template name="err assert argument /private method/string" value="assert $VAR$!=null&amp;&amp; !$VAR$.isBlank() : &quot;Argument should not be empty.&quot; );&#10;&#10;$END$&#10;&#10;" description="assert !=null  !isBlank" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
     <context>
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="assert argument /private method/collection" value="assert $VAR$!=null&amp;&amp; !$VAR$.isEmpty() : &quot;Collection should not be empty.&quot; ;&#10;&#10;$END$" description="assert !=null  !isEmpty()" toReformat="false" toShortenFQNames="true">
+  <template name="err assert argument /private method/collection" value="assert $VAR$!=null&amp;&amp; !$VAR$.isEmpty() : &quot;Collection should not be empty.&quot; ;&#10;&#10;$END$" description="assert !=null  !isEmpty()" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
     <context>
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="check argument /mutable/OPTIONAL" value="/**&#10; @return empty value    if input argument empty &#10;                        if one collection's element is empty&#10;                        if object's state inconsistent&#10; */&#10;if ($VAR$==null || $VAR$.isBlank() || !isConsistent()  )&#10;&#9;{&#10;&#9;logAtWarning_( &quot;String param must not ne null or empty. Or object's state inconsistent&quot; );&#10;&#9;return Optional.empty();&#10;&#9;}&#10;&#10;log_( &quot;compute({})&quot;,string );&#10;&#10;return Optional.ofNullable( string );" description="Optional  ==null  isBlank()  !isConsistent_()  )" toReformat="false" toShortenFQNames="true">
+  <template name="err check argument /mutable/OPTIONAL" value="/**&#10; @return empty value    if input argument empty &#10;                        if one collection's element is empty&#10;                        if object's state inconsistent&#10; */&#10;if ($VAR$==null || $VAR$.isBlank() || !isConsistent()  )&#10;&#9;{&#10;&#9;logAtWarning_( &quot;String param must not ne null or empty. Or object's state inconsistent&quot; );&#10;&#9;return Optional.empty();&#10;&#9;}&#10;&#10;log_( &quot;compute({})&quot;,string );&#10;&#10;return Optional.ofNullable( string );" description="Optional  ==null  isBlank()  !isConsistent_()  )" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
     <context>
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="check argument /mutable/ COLLECTION+OPTIONAL" value="/**&#10; @return empty value    if input argument null &#10;                        if one collection is empty&#10;                        if object's state inconsistent&#10; */&#10;if ( $VAR$==null||$VAR$.isEmpty() || !isConsistent() )&#10;&#9;{&#10;&#9;logAtWarning_( &quot;Collection param must not ne null or empty. Or object's state inconsistent&quot; );&#10;&#9;return Optional.empty();&#10;&#9;}&#10;&#10;log_( &quot;compute({})&quot;,string );&#10;&#10;return Optional.ofNullable( string );" description="Optional ==null isEmpty()  !isConsistent_()" toReformat="false" toShortenFQNames="true">
+  <template name="err check argument /mutable/ COLLECTION+OPTIONAL" value="/**&#10; @return empty value    if input argument null &#10;                        if one collection is empty&#10;                        if object's state inconsistent&#10; */&#10;if ( $VAR$==null||$VAR$.isEmpty() || !isConsistent() )&#10;&#9;{&#10;&#9;logAtWarning_( &quot;Collection param must not ne null or empty. Or object's state inconsistent&quot; );&#10;&#9;return Optional.empty();&#10;&#9;}&#10;&#10;log_( &quot;compute({})&quot;,string );&#10;&#10;return Optional.ofNullable( string );" description="Optional ==null isEmpty()  !isConsistent_()" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
     <context>
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="exception4 dontuse" value="&#10;throw new UnsupportedOperationException( &quot;Dont use this PRIVATE constructor.Please use constructor with parameters.&quot; );&#10;" description="throw generate exception CLASS {EXPERIMENTAL}" toReformat="false" toShortenFQNames="true">
+  <template name="err exception4 dontuse" value="&#10;throw new UnsupportedOperationException( &quot;Dont use this PRIVATE constructor.Please use constructor with parameters.&quot; );&#10;" description="throw generate exception CLASS {EXPERIMENTAL}" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="check argument /mutable/collection" value="/**&#10; @throws NullPointerException if input argument nullable&#10; @throws IllegalArgumentException if input collection is empty&#10; @throws IllegalStateException if some object's property null or empty&#10; */&#10;@NonNull   от LOMBOK&#10;notEmpty($VAR$)&#10;checkConsistency()&#10;" description="notEmpty + checkConsistency_" toReformat="false" toShortenFQNames="true">
+  <template name="err check argument /mutable/collection" value="/**&#10; @throws NullPointerException if input argument nullable&#10; @throws IllegalArgumentException if input collection is empty&#10; @throws IllegalStateException if some object's property null or empty&#10; */&#10;@NonNull   от LOMBOK&#10;notEmpty($VAR$)&#10;checkConsistency()&#10;" description="notEmpty + checkConsistency_" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
     <context>
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="check argument /mutable/string" value="/**&#10; @throws NullPointerException if argument nullable&#10; @throws IllegalArgumentException if input argument is blank&#10; @throws IllegalStateException if some object's property null or empty&#10; */&#10;@NonNull   от LOMBOK&#10;notBlank($VAR$)&#10;checkConsistency()&#10;" description="notBlank + checkConsistency_" toReformat="false" toShortenFQNames="true">
+  <template name="err check argument /mutable/string" value="/**&#10; @throws NullPointerException if argument nullable&#10; @throws IllegalArgumentException if input argument is blank&#10; @throws IllegalStateException if some object's property null or empty&#10; */&#10;@NonNull   от LOMBOK&#10;notBlank($VAR$)&#10;checkConsistency()&#10;" description="notBlank + checkConsistency_" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
     <context>
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="check argument /immutable/string" value="/**&#10; @throws NullPointerException if argument nullable&#10; @throws IllegalArgumentException if input argument is blank&#10; */&#10;@NonNull   от LOMBOK&#10;notBlank($VAR$)&#10;" description="notBlank()" toReformat="false" toShortenFQNames="true">
+  <template name="err check argument /immutable/string" value="/**&#10; @throws NullPointerException if argument nullable&#10; @throws IllegalArgumentException if input argument is blank&#10; */&#10;@NonNull   от LOMBOK&#10;notBlank($VAR$)&#10;" description="notBlank()" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
     <context>
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="check argument /immutable/collection" value="/**&#10; @throws NullPointerException if input argument nullable&#10; @throws IllegalArgumentException if input collection is empty&#10; */&#10;@NonNull   от LOMBOK&#10;notEmpty($VAR$)&#10;" description="notEmpty()" toReformat="false" toShortenFQNames="true">
+  <template name="err check argument /immutable/collection" value="/**&#10; @throws NullPointerException if input argument nullable&#10; @throws IllegalArgumentException if input collection is empty&#10; */&#10;@NonNull   от LOMBOK&#10;notEmpty($VAR$)&#10;" description="notEmpty()" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
     <context>
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="check argument /immutable/object" value="/**&#10; @throws NullPointerException if argument nullable&#10; */&#10;1) @NonNull   от LOMBOK&#10;2) notNull( $VAR$ );" description="=null  -&gt; NullPointerException" toReformat="false" toShortenFQNames="true">
+  <template name="err check argument /immutable/object" value="/**&#10; @throws NullPointerException if argument nullable&#10; */&#10;1) @NonNull   от LOMBOK&#10;2) notNull( $VAR$ );" description="=null  -&gt; NullPointerException" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
     <context>
       <option name="GROOVY_STATEMENT" value="true" />
@@ -282,14 +282,14 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="check argument /mutable/object" value="/**&#10; @throws NullPointerException if argument nullable&#10; @throws IllegalStateException if some object's property null or empty&#10; */&#10;1) @NonNull   от LOMBOK&#10;2) nonNull($VAR$)&#10;&#10;checkConsistency()&#10;" description="notBlank + checkConsistency_" toReformat="false" toShortenFQNames="true">
+  <template name="err check argument /mutable/object" value="/**&#10; @throws NullPointerException if argument nullable&#10; @throws IllegalStateException if some object's property null or empty&#10; */&#10;1) @NonNull   от LOMBOK&#10;2) nonNull($VAR$)&#10;&#10;checkConsistency()&#10;" description="notBlank + checkConsistency_" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
     <context>
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="check argument /immutable/OPTIONAL" value="/**&#10; @return empty value    if input argument empty &#10;                        if one collection's element is empty&#10; */&#10;if ($VAR$==null || $VAR$.isBlank() )&#10;&#9;{&#10;&#9;logAtWarning_( &quot;String param must not ne null or empty.&quot; );&#10;&#9;return Optional.empty();&#10;&#9;}&#10;&#10;log_( &quot;compute({})&quot;,string );&#10;&#10;return Optional.ofNullable( string );" description="Optional  ==null  isBlank()  !isConsistent_()  )" toReformat="false" toShortenFQNames="true">
+  <template name="err check argument /immutable/OPTIONAL" value="/**&#10; @return empty value    if input argument empty &#10;                        if one collection's element is empty&#10; */&#10;if ($VAR$==null || $VAR$.isBlank() )&#10;&#9;{&#10;&#9;logAtWarning_( &quot;String param must not ne null or empty.&quot; );&#10;&#9;return Optional.empty();&#10;&#9;}&#10;&#10;log_( &quot;compute({})&quot;,string );&#10;&#10;return Optional.ofNullable( string );" description="Optional  ==null  isBlank()  !isConsistent_()  )" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
     <context>
       <option name="GROOVY_STATEMENT" value="true" />
@@ -302,7 +302,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="asserj" value="import static org.assertj.core.api.Assertions.*;&#10;import static org.junit.Assume.*;&#10; &#10;assertThat(repository.findById(user.getId())).contains(user);&#10;assertThat(repository.findUserByIdIn(1000)).isNull();&#10;assertThat(repository.findUserByIdIn(42)).isEqualTo(user);" description="assert !=null  !isEmpty()" toReformat="false" toShortenFQNames="true">
+  <template name="err asserj" value="import static org.assertj.core.api.Assertions.*;&#10;import static org.junit.Assume.*;&#10; &#10;assertThat(repository.findById(user.getId())).contains(user);&#10;assertThat(repository.findUserByIdIn(1000)).isNull();&#10;assertThat(repository.findUserByIdIn(42)).isEqualTo(user);" description="assert !=null  !isEmpty()" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="JAVA_STATEMENT" value="true" />

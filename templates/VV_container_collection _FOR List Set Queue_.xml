@@ -85,7 +85,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newlist ArrayList" value="var $v_col1$ = new ArrayList&lt;$String$&gt;( );" description="new array list / List" toReformat="false" toShortenFQNames="true">
+  <template name="list ArrayList() empty" value="var $v_col1$ = new ArrayList&lt;$String$&gt;( );" description="NEW  array list / List" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -93,7 +93,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newlist LinkedList" value="var $v_col1$ = new LinkedList&lt;$String$&gt;( );" description="new linked  list / List+dequeue" toReformat="false" toShortenFQNames="true">
+  <template name="list LinkedList() empty" value="var $v_col1$ = new LinkedList&lt;$String$&gt;( );" description="NEW  linked  list / List+dequeue" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -101,7 +101,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newset EnumSet" value="//please use super interface Set: then you can make immutable enum&#10;Set&lt; $String$ &gt; $v_col1$ = ImmutableSet.copyOf( EnumSet.of( $String$.APRIL , $String$.JUNE ) );" description="new enum set / EnumSet" toReformat="false" toShortenFQNames="true">
+  <template name="set EnumSet" value="//please use super interface Set: then you can make immutable enum&#10;Set&lt; $String$ &gt; $v_col1$ = ImmutableSet.copyOf( EnumSet.of( $String$.APRIL , $String$.JUNE ) );" description="NEW enum set / EnumSet" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -109,7 +109,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newset HashSet" value="var $v_col1$ = new HashSet&lt;$String$&gt;( );" description="new hash set / Set" toReformat="false" toShortenFQNames="true">
+  <template name="set HashSet" value="var $v_col1$ = new HashSet&lt;$String$&gt;( );" description="NEW  hash set / Set" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -117,7 +117,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newset LinkedHashSet" value="var $v_col1$ = new LinkedHashSet&lt;$String$&gt;( );" description="new linked hash set / Set" toReformat="false" toShortenFQNames="true">
+  <template name="set LinkedHashSet() empty" value="var $v_col1$ = new LinkedHashSet&lt;$String$&gt;( );" description="NEW  linked hash set / Set" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -125,7 +125,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newqueue ArrayDeque" value="var $v_col1$ = new ArrayDeque&lt;$String$&gt;( );" description="new array dequeue / Deque" toReformat="false" toShortenFQNames="true">
+  <template name="list queue ArrayDeque" value="var $v_col1$ = new ArrayDeque&lt;$String$&gt;( );" description="NEW  array dequeue / Deque" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -133,7 +133,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newset TreeSet" value="var $v_col1$ = new TreeSet&lt;$String$&gt;( );" description="new tree set / NavigableSet" toReformat="false" toShortenFQNames="true">
+  <template name="set TreeSet" value="var $v_col1$ = new TreeSet&lt;$String$&gt;( );" description="NEW new tree set / NavigableSet" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -141,7 +141,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newqueue PriorityQueue" value="var $v_col1$ = new PriorityQueue&lt;$String$&gt;( );" description="new priority queue / Queue" toReformat="false" toShortenFQNames="true">
+  <template name="list queue PriorityQueue" value="var $v_col1$ = new PriorityQueue&lt;$String$&gt;( );" description="NEW priority queue / Queue" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -149,7 +149,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newlist . immut-&gt;mut" value="var $v_col1$ = new ArrayList&lt;$String$&gt;($coll$ );&#10;$END$" description="ArrayList(coll)     new array list / List   | SHALLOWCOPY" toReformat="false" toShortenFQNames="true">
+  <template name="list . immut-&gt;mut" value="var $v_col1$ = new ArrayList&lt;$String$&gt;($coll$ );&#10;$END$" description="NEW ArrayList(coll)     new array list / List   | SHALLOWCOPY" toReformat="false" toShortenFQNames="true">
     <variable name="coll" expression="variableOfType(&quot;java.util.Collection&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <variable name="String" expression="iterableComponentType(coll)" defaultValue="" alwaysStopAt="false" />
@@ -158,7 +158,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newlist LinkedList(coll)" value="var $v_col1$ = new LinkedList&lt;$String$&gt;( $coll$);" description="COLLECTION AS PARAM / new linked  list / List+dequeue" toReformat="false" toShortenFQNames="true">
+  <template name="list LinkedList(coll)" value="var $v_col1$ = new LinkedList&lt;$String$&gt;( $coll$);" description="NEW COLLECTION AS PARAM / new linked  list / List+dequeue" toReformat="false" toShortenFQNames="true">
     <variable name="coll" expression="variableOfType(&quot;java.util.Collection&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
@@ -167,7 +167,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newset TreeSet(coll)" value="var $v_col1$ = new TreeSet&lt;$String$&gt;($coll$ );" description="COLLECTION AS PARAM / new tree set / NavigableSet" toReformat="false" toShortenFQNames="true">
+  <template name="set TreeSet(coll)" value="var $v_col1$ = new TreeSet&lt;$String$&gt;($coll$ );" description="NEW COLLECTION AS PARAM / new tree set / NavigableSet" toReformat="false" toShortenFQNames="true">
     <variable name="coll" expression="variableOfType(&quot;java.util.Collection&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
@@ -176,7 +176,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newset . immut-&gt;mut" value="var $v_col1$ = new HashSet&lt;$String$&gt;($coll$ );" description="HashSet(coll)  / new hash set / Set" toReformat="false" toShortenFQNames="true">
+  <template name="set . immut-&gt;mut" value="var $v_col1$ = new HashSet&lt;$String$&gt;($coll$ );" description="NEW HashSet(coll)  / new hash set / Set" toReformat="false" toShortenFQNames="true">
     <variable name="coll" expression="variableOfType(&quot;java.util.Collection&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
@@ -185,7 +185,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newset LinkedHashSet(coll)" value="var $v_col1$ = new LinkedHashSet&lt;$String$&gt;( $coll$);" description="COLLECTION AS PARAM / new linked hash set / Set" toReformat="false" toShortenFQNames="true">
+  <template name="set LinkedHashSet(coll)" value="var $v_col1$ = new LinkedHashSet&lt;$String$&gt;( $coll$);" description="NEW COLLECTION AS PARAM / new linked hash set / Set" toReformat="false" toShortenFQNames="true">
     <variable name="coll" expression="variableOfType(&quot;java.util.Collection&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
@@ -194,7 +194,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newset TreeSet(comparator)" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10;&#10;дефолтный компаратор НО указываем по каким свойствам/методам объекта будем сравнивать&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(   p_1 -&gt; p_1.c_prop );&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(  (VV_ p_1) -&gt; p_1.c_prop1 ).thenComparing( (VV_ p_1)-&gt; p_1.c_prop2 );&#10;&#10;указываем не только извлекаемые из объекта свойство для сравнения НО И ФУНКЦИЮ ДЛЯ ИХ СРАВНЕНИЯ&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(   p_1 -&gt; p_1.c_prop , (p_1,p_2) -&gt; p_2.compareTo(p_1));&#10; &#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;var $v_col1$ = new TreeSet&lt;$String$&gt;( $comp$);" description="COMPARATOR AS PARAM / new tree set / NavigableSet" toReformat="false" toShortenFQNames="true">
+  <template name="set TreeSet(comparator)" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10;&#10;дефолтный компаратор НО указываем по каким свойствам/методам объекта будем сравнивать&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(   p_1 -&gt; p_1.c_prop );&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(  (VV_ p_1) -&gt; p_1.c_prop1 ).thenComparing( (VV_ p_1)-&gt; p_1.c_prop2 );&#10;&#10;указываем не только извлекаемые из объекта свойство для сравнения НО И ФУНКЦИЮ ДЛЯ ИХ СРАВНЕНИЯ&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(   p_1 -&gt; p_1.c_prop , (p_1,p_2) -&gt; p_2.compareTo(p_1));&#10; &#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;var $v_col1$ = new TreeSet&lt;$String$&gt;( $comp$);" description="NEW COMPARATOR AS PARAM / new tree set / NavigableSet" toReformat="false" toShortenFQNames="true">
     <variable name="comp" expression="variableOfType(&quot;java.util.Comparator&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
@@ -203,7 +203,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newqueue PriorityQueue(coll)" value="var $v_col1$ = new PriorityQueue&lt;$String$&gt;($coll$ );" description="COLLECTION AS PARAM / new priority queue / Queue" toReformat="false" toShortenFQNames="true">
+  <template name="list queue PriorityQueue(coll)" value="var $v_col1$ = new PriorityQueue&lt;$String$&gt;($coll$ );" description="NEW COLLECTION AS PARAM / new priority queue / Queue" toReformat="false" toShortenFQNames="true">
     <variable name="coll" expression="variableOfType(&quot;java.util.Collection&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
@@ -212,7 +212,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newqueue ArrayDeque(coll)" value="var $v_col1$ = new ArrayDeque&lt;$String$&gt;( $coll$);" description="COLLECTION AS PARAM / new array dequeue / Deque" toReformat="false" toShortenFQNames="true">
+  <template name="list queue ArrayDeque(coll)" value="var $v_col1$ = new ArrayDeque&lt;$String$&gt;( $coll$);" description="NEW COLLECTION AS PARAM / new array dequeue / Deque" toReformat="false" toShortenFQNames="true">
     <variable name="coll" expression="variableOfType(&quot;java.util.Collection&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
@@ -221,7 +221,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newqueue PriorityQueue(set)" value="var $v_col1$ = new PriorityQueue&lt;$String$&gt;( $set$);" description="SET AS PARAM / new priority queue / Queue" toReformat="false" toShortenFQNames="true">
+  <template name="list queue PriorityQueue(set)" value="var $v_col1$ = new PriorityQueue&lt;$String$&gt;( $set$);" description="NEW SET AS PARAM / new priority queue / Queue" toReformat="false" toShortenFQNames="true">
     <variable name="set" expression="variableOfType(&quot;java.util.SortedSet&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
@@ -230,7 +230,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newqueue PriorityQueue(comparator)" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10;&#10;дефолтный компаратор НО указываем по каким свойствам/методам объекта будем сравнивать&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(   p_1 -&gt; p_1.c_prop );&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(  (VV_ p_1) -&gt; p_1.c_prop1 ).thenComparing( (VV_ p_1)-&gt; p_1.c_prop2 );&#10;&#10;указываем не только извлекаемые из объекта свойство для сравнения НО И ФУНКЦИЮ ДЛЯ ИХ СРАВНЕНИЯ&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(   p_1 -&gt; p_1.c_prop , (p_1,p_2) -&gt; p_2.compareTo(p_1));&#10;&#10; &#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;var $v_col1$ = new PriorityQueue&lt;$String$&gt;( $comp$);" description="COMPARATOR AS PARAM / new priority queue / Queue" toReformat="false" toShortenFQNames="true">
+  <template name="list queue PriorityQueue(comparator)" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10;&#10;дефолтный компаратор НО указываем по каким свойствам/методам объекта будем сравнивать&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(   p_1 -&gt; p_1.c_prop );&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(  (VV_ p_1) -&gt; p_1.c_prop1 ).thenComparing( (VV_ p_1)-&gt; p_1.c_prop2 );&#10;&#10;указываем не только извлекаемые из объекта свойство для сравнения НО И ФУНКЦИЮ ДЛЯ ИХ СРАВНЕНИЯ&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(   p_1 -&gt; p_1.c_prop , (p_1,p_2) -&gt; p_2.compareTo(p_1));&#10;&#10; &#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;var $v_col1$ = new PriorityQueue&lt;$String$&gt;( $comp$);" description="NEW COMPARATOR AS PARAM / new priority queue / Queue" toReformat="false" toShortenFQNames="true">
     <variable name="comp" expression="variableOfType(&quot;java.util.Comparator&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
@@ -253,14 +253,14 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newcomparator1" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10;нули трактуются как меньшее/большее значение&#10;Comparator&lt;String&gt; v_comp_reversed=Comparator.nullsFirst( v_comp );&#10;Comparator&lt;String&gt; v_comp_reversed=Comparator.nullsLast( v_comp );&#10;&#10;если объекты равны то они будут сортироваться по второму компаратору&#10;((Comparator&lt; String &gt;) ( p_1 , p_2 ) -&gt; {return 1;} ).thenComparing(  ( p_1,p_2 ) -&gt; {return 1;} )&#10;&#10;дефолтный компаратор НО указываем по каким свойствам/методам объекта будем сравнивать&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(   p_1 -&gt; p_1.c_prop );&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(  (VV_ p_1) -&gt; p_1.c_prop1 ).thenComparing( (VV_ p_1)-&gt; p_1.c_prop2 );&#10;&#10;указываем не только извлекаемые из объекта свойство для сравнения НО И ФУНКЦИЮ ДЛЯ ИХ СРАВНЕНИЯ&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(   p_1 -&gt; p_1.c_prop , (p_1,p_2) -&gt; p_2.compareTo(p_1)); &#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;var v_comp = new Comparator&lt;$class$&gt;( )&#10;&#9;{&#10;&#9;@Override&#10;&#9;public int compare( $class$ p_1 ,&#10;&#9;                    $class$ p_2 )&#10;&#9;&#9;{&#10;&#9;&#9;return p_1.compareTo( p_2 );&#10;&#9;&#9;}&#10;&#9;};&#10;" description="new comparator anonym class" toReformat="false" toShortenFQNames="true">
+  <template name="comparator1 as anonym class" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10;нули трактуются как меньшее/большее значение&#10;Comparator&lt;String&gt; v_comp_reversed=Comparator.nullsFirst( v_comp );&#10;Comparator&lt;String&gt; v_comp_reversed=Comparator.nullsLast( v_comp );&#10;&#10;если объекты равны то они будут сортироваться по второму компаратору&#10;((Comparator&lt; String &gt;) ( p_1 , p_2 ) -&gt; {return 1;} ).thenComparing(  ( p_1,p_2 ) -&gt; {return 1;} )&#10;&#10;дефолтный компаратор НО указываем по каким свойствам/методам объекта будем сравнивать&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(   p_1 -&gt; p_1.c_prop );&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(  (VV_ p_1) -&gt; p_1.c_prop1 ).thenComparing( (VV_ p_1)-&gt; p_1.c_prop2 );&#10;&#10;указываем не только извлекаемые из объекта свойство для сравнения НО И ФУНКЦИЮ ДЛЯ ИХ СРАВНЕНИЯ&#10;Comparator&lt; VV_ &gt; v_comp2 = Comparator.comparing(   p_1 -&gt; p_1.c_prop , (p_1,p_2) -&gt; p_2.compareTo(p_1)); &#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;var v_comp = new Comparator&lt;$class$&gt;( )&#10;&#9;{&#10;&#9;@Override&#10;&#9;public int compare( $class$ p_1 ,&#10;&#9;                    $class$ p_2 )&#10;&#9;&#9;{&#10;&#9;&#9;return p_1.compareTo( p_2 );&#10;&#9;&#9;}&#10;&#9;};&#10;" description="NEW comparator anonym class" toReformat="false" toShortenFQNames="true">
     <variable name="class" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newlist List.of(&quot;1&quot;,&quot;2&quot;) immutable" value="var $v_col1$ = List.&lt;$String$&gt;of(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;$END$);" description="получить список (немутабельный) из vararg или пустойСписок" toReformat="false" toShortenFQNames="true">
+  <template name="list List.of(&quot;1&quot;,&quot;2&quot;) immutable" value="var $v_col1$ = List.&lt;$String$&gt;of(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;$END$);" description="NEW получить список (немутабельный) из vararg или пустойСписок" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -268,7 +268,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newlist . mut-&gt;immut" value="var $v_col1$ = List.&lt;$String$&gt;copyOf( $v_arr$ );&#10;$END$" description="List.of(arr)  получить список (немутабельный) из coll | SHALLOWCOPY" toReformat="false" toShortenFQNames="true">
+  <template name="list . mut-&gt;immut" value="var $v_col1$ = List.&lt;$String$&gt;copyOf( $v_arr$ );&#10;$END$" description="NEW List.of(arr)  получить список (немутабельный) из coll | SHALLOWCOPY" toReformat="false" toShortenFQNames="true">
     <variable name="v_arr" expression="variableOfType(&quot;java.util.Collection&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <variable name="String" expression="iterableComponentType(v_arr)" defaultValue="" alwaysStopAt="false" />
@@ -277,7 +277,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newlist List.&lt;arrtype[]&gt;of(arr)" value="var $v_col1$ = List.&lt;$String$[]&gt;of($v_arr$);&#10;$END$" description="получить список (немутабельный)   &quot;массив массивов&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="list List.&lt;arrtype[]&gt;of(arr)" value="var $v_col1$ = List.&lt;$String$[]&gt;of($v_arr$);&#10;$END$" description="NEW получить список (немутабельный)   &quot;массив массивов&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="v_arr" expression="arrayVariable()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <variable name="String" expression="componentTypeOf(v_arr)" defaultValue="" alwaysStopAt="false" />
@@ -286,7 +286,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newset Set.of(&quot;1&quot;,&quot;2&quot;) immutable" value="var $v_col1$ = Set.&lt;$String$&gt;of(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;$END$);" description="получить сет (немутабельный) из vararg или пустойСет" toReformat="false" toShortenFQNames="true">
+  <template name="set Set.of(&quot;1&quot;,&quot;2&quot;) immutable" value="var $v_col1$ = Set.&lt;$String$&gt;of(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;$END$);" description="NEW получить сет (немутабельный) из vararg или пустойСет" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -294,7 +294,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newset . mut-&gt;immut" value="var $v_col1$ = Set.&lt;$String$&gt;copyOf( $v_arr$ );&#10;$END$" description="Set.of(arr) получить сет (немутабельный) из arr" toReformat="false" toShortenFQNames="true">
+  <template name="set . mut-&gt;immut" value="var $v_col1$ = Set.&lt;$String$&gt;copyOf( $v_arr$ );&#10;$END$" description="NEW Set.of(arr) получить сет (немутабельный) из arr" toReformat="false" toShortenFQNames="true">
     <variable name="v_arr" expression="variableOfType(&quot;java.util.Collection&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <variable name="String" expression="componentTypeOf(v_arr)" defaultValue="" alwaysStopAt="false" />
@@ -303,7 +303,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newset Set.&lt;arrtype[]&gt;of(arr)" value="var $v_col1$ = Set.&lt;$String$[]&gt;of($v_arr$);&#10;$END$" description="получить сет (немутабельный)  &quot;массив массивов&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="set Set.&lt;arrtype[]&gt;of(arr)" value="var $v_col1$ = Set.&lt;$String$[]&gt;of($v_arr$);&#10;$END$" description="NEW получить сет (немутабельный)  &quot;массив массивов&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="v_arr" expression="arrayVariable()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <variable name="String" expression="componentTypeOf(v_arr)" defaultValue="" alwaysStopAt="false" />
@@ -312,7 +312,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newcomparator2" value="Comparator.comparing(   p_1 -&gt; p_1.c_prop )&#10;" description="new comparator LAMBDA указываем по каким свойствам/методам объекта будем сравнивать" toReformat="false" toShortenFQNames="true">
+  <template name="comparator2 as lambda" value="Comparator.comparing(   p_1 -&gt; p_1.c_prop )&#10;" description="NEW new comparator LAMBDA указываем по каким свойствам/методам объекта будем сравнивать" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
@@ -325,7 +325,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newlist List.of(&quot;1&quot;,&quot;2&quot;) mutable" value="var $v_col1$ = new ArrayList&lt;$String$&gt;( List.of( &quot;1&quot;, &quot;2&quot;, &quot;3&quot;$END$ ) );" description="получить список (мутабельный) из vararg или пустойСписок" toReformat="false" toShortenFQNames="true">
+  <template name="list List.of(&quot;1&quot;,&quot;2&quot;) mutable" value="var $v_col1$ = new ArrayList&lt;$String$&gt;( List.of( &quot;1&quot;, &quot;2&quot;, &quot;3&quot;$END$ ) );" description="NEW получить список (мутабельный) из vararg или пустойСписок" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -333,7 +333,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newset Set.of(&quot;1&quot;,&quot;2&quot;) mutable" value="var $v_col1$ = new HashSet&lt;$String$&gt;( Set.of( &quot;1&quot;, &quot;2&quot;, &quot;3&quot;$END$ ) );" description="получить сет (мутабельный) из vararg или пустойСет" toReformat="false" toShortenFQNames="true">
+  <template name="set Set.of(&quot;1&quot;,&quot;2&quot;) mutable" value="var $v_col1$ = new HashSet&lt;$String$&gt;( Set.of( &quot;1&quot;, &quot;2&quot;, &quot;3&quot;$END$ ) );" description="NEW получить сет (мутабельный) из vararg или пустойСет" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -341,7 +341,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newenum void" value="var $v_col1$ = new EnumSet.noneOf( $coll$ );" description="COLLECTION AS PARAM / new enum set" toReformat="false" toShortenFQNames="true">
+  <template name="list enum void" value="var $v_col1$ = new EnumSet.noneOf( $coll$ );" description="NEW COLLECTION AS PARAM / new enum set" toReformat="false" toShortenFQNames="true">
     <variable name="coll" expression="variableOfType(&quot;java.lang.Enum&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -349,7 +349,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newenum EnumSet.of(&quot;1&quot;,&quot;2&quot;) mutable" value="var $v_col1$ = List.&lt;$String$&gt;of(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;$END$);" description="получить битовые_флаги (мутабельный) из vararg или пустойСписок" toReformat="false" toShortenFQNames="true">
+  <template name="newobj enum EnumSet.of(&quot;1&quot;,&quot;2&quot;) mutable" value="var $v_col1$ = List.&lt;$String$&gt;of(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;$END$);" description="получить битовые_флаги (мутабельный) из vararg или пустойСписок" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -357,13 +357,13 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newcomparator3 coll" value="Ordering.&lt;String&gt;natural().lexicographical()&#10;" description="new comparator GUAVA collections" toReformat="false" toShortenFQNames="true">
+  <template name="comparator3 of coll" value="Ordering.&lt;String&gt;natural().lexicographical()&#10;" description="NEW  comparator GUAVA collections" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newcomparator4 coll extract field" value="Ordering&lt; ArrayList&lt; Chisto &gt; &gt; ordering = &#10;&#9;Ordering.natural().onResultOf( &#10;&#9;&#9;( value ) -&gt; {/*выбрать элемент коллекции который будем сравнивать ЗА всю коллекцию*/ return value.get( 0 ).getTwo(); } );&#10;&#9;" description="new comparator GUAVA collections" toReformat="false" toShortenFQNames="true">
+  <template name="comparator4 of coll extract field" value="Ordering&lt; ArrayList&lt; Chisto &gt; &gt; ordering = &#10;&#9;Ordering.natural().onResultOf( &#10;&#9;&#9;( value ) -&gt; {/*выбрать элемент коллекции который будем сравнивать ЗА всю коллекцию*/ return value.get( 0 ).getTwo(); } );&#10;&#9;" description="NEW  comparator GUAVA collections" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
@@ -385,6 +385,13 @@
   </template>
   <template name="forcollambda3 vavr indexed" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10; NOT DELETE ITERABLE ELEMENTS&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;$arr$&#10;var s = io.vavr.collection.List.&lt; String &gt; of( &quot;11&quot; , &quot;22&quot; , &quot;33&quot; );&#10;s.toStream()&#10; .zipWithIndex()&#10; .forEach( ( e ) -&gt;&#10;           {&#10;           System.out.println( e._2 + &quot; &quot; + e._1 );&#10;           } );&#10;&#10;" description="vavr_coll.toStream.forEach(indexed)    ANY ITERABLE TYPE array,collection" toReformat="false" toShortenFQNames="true">
     <variable name="arr" expression="iterableVariable()" defaultValue="arr" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="list from array" value="Arrays.asList( $arr$ )" description="Arrays.asList" toReformat="false" toShortenFQNames="true">
+    <variable name="arr" expression="arrayVariable()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
