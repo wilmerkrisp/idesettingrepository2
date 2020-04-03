@@ -3,11 +3,12 @@
     <property name="created">2018-04-04T15:01:24</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2018.1.1.0.0</property>
-    <property name="modified">2018-11-23T19:43:54</property>
+    <property name="modified">2020-04-03T21:16:43</property>
     <property name="originalScheme">DarculaWilmer</property>
   </metaInfo>
   <colors>
     <option name="CARET_ROW_COLOR" value="320405" />
+    <option name="FOLDED_TEXT_BORDER_COLOR" value="131619" />
   </colors>
   <attributes>
     <option name="DEFAULT_BLOCK_COMMENT">
@@ -22,7 +23,6 @@
     </option>
     <option name="FOLDED_TEXT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="7b7e80" />
         <option name="BACKGROUND" value="303030" />
       </value>
     </option>
