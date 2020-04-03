@@ -270,4 +270,16 @@
       <option name="JAVA_EXPRESSION" value="true" />
     </context>
   </template>
+  <template name="new tuple projectreactor" value="/*import reactor.util.function.Tuple2;&#10;import reactor.util.function.Tuples;*/&#10;var t = Tuples.of( $var$ );" description="Tuples.of" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="new tuple vavr GOOD" value="Tuple.of( $var$ );" description="Tuple.of  nullable" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
