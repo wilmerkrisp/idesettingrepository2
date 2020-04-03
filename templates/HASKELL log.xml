@@ -1,0 +1,18 @@
+<templateSet group="HASKELL log">
+  <template name="print" value="putStrLn &quot;hello,&quot;++$END$" description="putStrLn" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HASKELL_FILE" value="true" />
+    </context>
+  </template>
+  <template name="log" value="traceShow $v$" description="traceShow" toReformat="false" toShortenFQNames="true">
+    <variable name="v" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HASKELL_FILE" value="true" />
+    </context>
+  </template>
+  <template name="comment split" value="--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#10;-------------------$END$-------------------------------------------------------------------------------------------------------------------------------------------------------------------&#10;--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" description="-------------------" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HASKELL_FILE" value="true" />
+    </context>
+  </template>
+</templateSet>
