@@ -3,7 +3,7 @@
     <property name="created">2018-04-04T15:01:24</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2018.1.1.0.0</property>
-    <property name="modified">2020-04-03T21:17:39</property>
+    <property name="modified">2020-04-03T21:20:22</property>
     <property name="originalScheme">DarculaWilmer</property>
   </metaInfo>
   <colors>
@@ -33,6 +33,13 @@
         <option name="EFFECT_COLOR" value="3c3f41" />
         <option name="ERROR_STRIPE_COLOR" value="36b13" />
         <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="WARNING_ATTRIBUTES">
+      <value>
+        <option name="BACKGROUND" value="393726" />
+        <option name="ERROR_STRIPE_COLOR" value="be9117" />
+        <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
   </attributes>
