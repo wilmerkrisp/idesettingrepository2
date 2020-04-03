@@ -49,4 +49,18 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="for WHILE POP + result" value="var list   = new ArrayDeque&lt;Integer&gt;( $arr$ );&#10;var result = new ArrayList&lt;Integer&gt;();&#10;while( !list.isEmpty() )&#10;&#9;{&#10;&#9;var fst = list.peekFirst();&#10;&#9;var lst = list.peekLast();&#10;&#9;result.add( 0, list.pollLast() );&#10;&#9;}&#10;print( result );$END$" description="while poolLast" toReformat="false" toShortenFQNames="true">
+    <variable name="arr" expression="iterableVariable()" defaultValue="arr" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="for WHILE POPLEFT + result" value="var list   = new ArrayDeque&lt;Integer&gt;( $arr$ );&#10;var result = new ArrayList&lt;Integer&gt;();&#10;while( !list.isEmpty() )&#10;&#9;{&#10;&#9;var fst = list.peekFirst();&#10;&#9;var lst = list.peekLast();&#10;&#9;result.add( list.pollFirst() );&#10;&#9;}&#10;print( result );$END$&#10;&#9;&#9;&#9;" description="while pollFirst" toReformat="false" toShortenFQNames="true">
+    <variable name="arr" expression="iterableVariable()" defaultValue="arr" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
