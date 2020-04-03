@@ -140,6 +140,10 @@
   <action id="ModifyObject" />
   <action id="Move" />
   <action id="NavBar-navigate" />
+  <action id="NewElementInMenuGroup">
+    <keyboard-shortcut first-keystroke="ctrl f1" />
+    <keyboard-shortcut first-keystroke="ctrl n" />
+  </action>
   <action id="NextDiff" />
   <action id="OpenModuleSettings" />
   <action id="ProjectViewEditSource" />
@@ -179,6 +183,7 @@
   <action id="ShelvedChanges.Rename">
     <keyboard-shortcut first-keystroke="shift f6" />
   </action>
+  <action id="ShowErrorDescription" />
   <action id="ShowIntentionActions">
     <keyboard-shortcut first-keystroke="alt enter" />
     <keyboard-shortcut first-keystroke="f4" />
