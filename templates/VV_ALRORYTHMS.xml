@@ -74,7 +74,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="new int INFINITE NUMBER" value="private static final int  INFINITY = 10000;&#10;Integer.MAX_VALUE // !!! НО ПРИ ВЫЧИТАНИИ МАКСИМУМА БУДЕТ ПРОБЛЕМА !!!&#10;Double.POSITIVE_INFINITY" description="Integer.MAX_VALUE" toReformat="false" toShortenFQNames="true">
+  <template name="new int INFINITE NUMBER" value="private static final int  INFINITY = Short.MAX_VALUE; // INF only for Integers because of int/2&#10;Integer.MAX_VALUE // !!! НО ПРИ ВЫЧИТАНИИ МАКСИМУМА БУДЕТ ПРОБЛЕМА !!!&#10;Double.POSITIVE_INFINITY" description="Integer.MAX_VALUE" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
