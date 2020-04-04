@@ -1,6 +1,5 @@
 <application>
   <component name="NotificationConfiguration">
-    <notification groupId="Haskell Log" displayType="NONE" />
     <notification groupId="IDE and Plugin Updates" displayType="STICKY_BALLOON" shouldLog="false" />
   </component>
 </application>
