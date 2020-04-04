@@ -1,4 +1,4 @@
-<templateSet group="VV_log">
+<templateSet group="VV_log_n_err">
   <template name="try catch2" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10;&#10;catch NO ALL EXCEPTIONS only that I can RESOLVE HERE&#10;catch (final 1Exception | 2Exception  p_exception)  &#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;try&#10;&#9;{&#10;&#9;//throw new VX_exception( &quot;vError&quot; );&#10;&#9;&#10;&#9;$SELECTION$&#10;&#9;&#9;&#10;&#9;$END$&#10;&#9;}&#10;catch(final VX_exception p_exception ) &#10;&#9;{&#10;&#9;//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;&#9;/*&#10;&#9;log_.error(&quot;RESOLVE:&quot;+p_exception, p_exception );&#10;&#9;&#10;&#9;COMPENSATE BRUNCH  NEDD RESTORE SYSTEM HERE &#10;&#9;*/&#10;&#9;//&lt;/editor-fold&gt;&#10;&#9;&#10;&#10;&#9;}&#10;" description="try catch RESOLVE+LOG STRATEGY" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
@@ -313,6 +313,12 @@
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="err if len==1 return" value="if( $points$.size() == 0   )&#10;    {&#10;    logAtWarning( &quot;distance: string param must not ne null or empty&quot; );&#10;    return List.&lt;String&gt;of();&#10;    }" description="check empty collection" toReformat="false" toShortenFQNames="true">
+    <variable name="points" expression="iterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
     </context>
   </template>
 </templateSet>
