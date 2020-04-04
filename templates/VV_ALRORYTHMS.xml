@@ -76,8 +76,7 @@
   </template>
   <template name="new int INFINITE NUMBER" value="Integer.MAX_VALUE&#10;Double.POSITIVE_INFINITY" description="Integer.MAX_VALUE" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="GROOVY_STATEMENT" value="true" />
-      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_CODE" value="true" />
     </context>
   </template>
   <template name="func SORT by key" value="$points$.sort( Ordering.natural()&#10;&#9;&#9;                     .onResultOf( p -&gt; (Comparable) p._1 $END$ ) );&#10;&#9;&#9; " description=".sort ( guava comparator )" toReformat="false" toShortenFQNames="true">
