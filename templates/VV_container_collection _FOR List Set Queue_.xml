@@ -63,7 +63,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="forcoll3" value="for(var v_i: new $ArrayList$&lt;$string$&gt;($arr$) )&#10;&#9;{&#10;&#9;//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;&#9;/* $string$&#10;&#9;if(v_i == 10) break continue&#10;&#9;log_.debug   (&quot;$class$ $method$ for: &quot;+v_i);&#10;&#9;&#10;&#9;$arr$.remove( v_i ); // MODIFY&#10;&#9;$arr$.add( v_i );    // MODIFY&#9; &#10;&#9; &#10;&#10;&#9; C     &#10;&#9; R     &#10;&#9; U     &#10;&#9; D&#9; &#10;&#9; */&#10;&#9;//&lt;/editor-fold&gt;&#10;&#9;&#10;&#9;&#10;&#10;&#9;$END$&#10;&#9;&#9;&#10;&#9;$SELECTION$&#10;&#9;&#10;&#10;&#9;}" description="forEach(:new arr) collection MODIFY" toReformat="false" toShortenFQNames="true">
+  <template name="forcoll3" value="for(var i: new $ArrayList$&lt;$string$&gt;($arr$) )&#10;&#9;{&#10;&#9;//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;&#9;/* $string$&#10;&#9;if(i == 10) break continue&#10;&#9;log_.debug   (&quot;$class$ $method$ for: &quot;+i);&#10;&#9;&#10;&#9;$arr$.remove( i ); // MODIFY&#10;&#9;$arr$.add( i );    // MODIFY&#9; &#10;&#9; &#10;&#10;&#9; C     &#10;&#9; R     &#10;&#9; U     &#10;&#9; D&#9; &#10;&#9; */&#10;&#9;//&lt;/editor-fold&gt;&#10;&#9;&#10;&#9;&#10;&#10;&#9;$END$&#10;&#9;&#9;&#10;&#9;$SELECTION$&#10;&#9;&#10;&#10;&#9;}" description="forEach(:new arr) collection MODIFY" toReformat="false" toShortenFQNames="true">
     <variable name="arr" expression="variableOfType(&quot;java.util.Collection&quot;)" defaultValue="arr" alwaysStopAt="true" />
     <variable name="ArrayList" expression="typeOfVariable(arr)" defaultValue="" alwaysStopAt="false" />
     <variable name="string" expression="guessElementType(arr)" defaultValue="" alwaysStopAt="false" />
@@ -228,14 +228,14 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="forcoll4" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10; NOT DELETE ITERABLE ELEMENTS&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;$arr$.forEach( (p_1)-&gt;{  $END$System.out.println(p_1);$SELECTION$ } );" description="iterable.forEach(Л) ANY ITERABLE TYPE array,collection" toReformat="false" toShortenFQNames="true">
+  <template name="forcoll4" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10; NOT DELETE ITERABLE ELEMENTS&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;$arr$.forEach( (x)-&gt;{  $END$System.out.println(x);$SELECTION$ } );" description="iterable.forEach(Л) ANY ITERABLE TYPE array,collection" toReformat="false" toShortenFQNames="true">
     <variable name="arr" expression="iterableVariable()" defaultValue="arr" alwaysStopAt="true" />
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="forcoll5" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10; NOT DELETE ITERABLE ELEMENTS&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;$arr$.iterator().forEachRemaining( (p_1)-&gt;{  $END$System.out.println(p_1);$SELECTION$ } );" description="iterable.iterator.forEachRemaining(Л)   ANY ITERABLE TYPE array,collection" toReformat="false" toShortenFQNames="true">
+  <template name="forcoll5" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10; NOT DELETE ITERABLE ELEMENTS&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;$arr$.iterator().forEachRemaining( (x)-&gt;{  $END$System.out.println(x);$SELECTION$ } );" description="iterable.iterator.forEachRemaining(Л)   ANY ITERABLE TYPE array,collection" toReformat="false" toShortenFQNames="true">
     <variable name="arr" expression="iterableVariable()" defaultValue="arr" alwaysStopAt="true" />
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
