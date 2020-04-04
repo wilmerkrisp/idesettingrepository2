@@ -1,4 +1,4 @@
-<templateSet group="VV_algo">
+<templateSet group="VV_ALRORYTHMS">
   <template name="algo recursion1" value="&#9;/**&#10;&#9; * &#10;&#9; *      !CHANGE_ME_DESCRIPTION!&#10;&#9; * &#10;&#9; * &lt;pre&gt;{@code                   method simple recursia&#10;&#9; *&#10;&#9; * example 1&#10;&#9; *           v_obj.f_recursiveMethodd(10);&#10;&#9; *&#10;&#9; * example 2&#10;&#9; *&#10;&#9; *&#10;&#9; * }&lt;/pre&gt;&#10;&#9; *&#10;&#9; *&#10;&#9; */&#10;&#9;public static void f_recursiveMethodd(final int p_1 )&#10;&#9;&#9;{&#10;&#9;&#9;log_.debug( &quot;${PROJECT_NAME} ${PACKAGE_NAME} recursia start      : &quot; + p_1 );&#10;&#9;&#9;if( p_1 &gt; 0 )&#10;&#9;&#9;&#9;{&#10;&#9;&#9;&#9;f_recursiveMethodd( p_1-1 );&#10;&#9;&#9;&#9;}&#10;&#9;&#9;log_.debug( &quot;${PROJECT_NAME} ${PACKAGE_NAME} recursia end        : &quot; + p_1 );&#10;&#9;&#9;}&#10;" description="method recursia" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_DECLARATION" value="true" />
@@ -78,6 +78,18 @@
     <context>
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="func SORT by key" value="$points$.sort( Ordering.natural()&#10;&#9;&#9;                     .onResultOf( p -&gt; (Comparable) p._1 $END$ ) );&#10;&#9;&#9; " description=".sort ( guava comparator )" toReformat="false" toShortenFQNames="true">
+    <variable name="points" expression="iterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="func MIN by key" value="var max_ = Collections.max( $points$, Ordering.natural()&#10;                                            .onResultOf( p -&gt; (Comparable) p._1 $END$ ) );" description="Collections.max( guava comparator )" toReformat="false" toShortenFQNames="true">
+    <variable name="points" expression="iterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
     </context>
   </template>
 </templateSet>
