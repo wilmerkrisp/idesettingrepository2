@@ -18,6 +18,7 @@
       <template name="_lambda.java" reformat="true" live-template-enabled="true" />
       <template name="_lambda GENERIC.java" reformat="true" live-template-enabled="true" />
       <template name="_static class.java" reformat="true" live-template-enabled="true" />
+      <template name="_static class (SERVICE good).java" reformat="true" live-template-enabled="true" />
       <template name="_static class (SERVICE).java" reformat="true" live-template-enabled="true" />
       <template name="_tuple 9 IMmutable GENERIC GOOGLE.java" reformat="true" live-template-enabled="true" />
       <template name="_tuple 9 IMmutable GENERIC LOMBOK.java" reformat="true" live-template-enabled="true" />

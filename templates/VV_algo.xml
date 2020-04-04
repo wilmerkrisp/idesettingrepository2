@@ -63,4 +63,21 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="forcoll6 list CLASSIC with index" value="for (var v_i = 0; v_i &lt; $LIST$.size(); v_i++) &#10;&#9;{&#10;&#9;//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;&#9;/* &#10;&#9; if(v_i == 10) break continue&#10;&#9; log_.debug   (&quot;$class$ $method$ for: &quot;+v_i+&quot;=&quot;+v_j);&#10;&#9; &#10;         C     &#10;&#9; R      $ELEMENT_TYPE$   &#10;&#9; U     &#10;&#9; D&#10;&#9; */&#10;&#9;//&lt;/editor-fold&gt;&#10;&#9;&#10;&#9;&#10;&#9;&#10;        var v_j = $CAST$ $LIST$.get(v_i);&#10;&#9;&#10;&#9;&#10;&#9;$SELECTION$&#10;&#9;&#9;&#10;&#10;&#9; $END$&#10;&#9;}&#10;&#10;&#10;" description="for(;size();)" toReformat="false" toShortenFQNames="true">
+    <variable name="LIST" expression="variableOfType(&quot;java.util.List&quot;)" defaultValue="&quot;list&quot;" alwaysStopAt="true" />
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ELEMENT_TYPE" expression="guessElementType(LIST)" defaultValue="&quot;Object&quot;" alwaysStopAt="false" />
+    <variable name="CAST" expression="castToLeftSideType()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="new int INFINITE NUMBER" value="Integer.MAX_VALUE&#10;Double.POSITIVE_INFINITY" description="Integer.MAX_VALUE" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
