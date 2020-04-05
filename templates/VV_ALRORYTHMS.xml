@@ -91,4 +91,20 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="for stream LISTS CONCATENTION" value="var result=Stream.of( $left$ , $mid$ , $right$ )&#10;             .sequential()&#10;             .flatMap( Collection::stream )&#10;             .collect( toList() );&#10;&#9;&#9; " description="Stream.of(list1,list2,list3)" toReformat="false" toShortenFQNames="true">
+    <variable name="left" expression="iterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="mid" expression="iterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="right" expression="iterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="for LISTS CONCATENTION" value="var rez = $left$;&#10;rez.addAll( $mid$ );&#10;rez.addAll($right$ );&#9;&#9; " description="list.addAll( list2 )" toReformat="false" toShortenFQNames="true">
+    <variable name="left" expression="iterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="mid" expression="iterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="right" expression="iterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
