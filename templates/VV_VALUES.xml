@@ -4,19 +4,26 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="new string mutable" value="var s=new StringBuilder();&#10;s.append(&quot;some&quot;);" description="apache commons  random string" toReformat="false" toShortenFQNames="true">
+  <template name="string NEW mutable" value="var s=new StringBuilder();&#10;s.append(&quot;some&quot;);" description="apache commons  random string" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="new string random" value="int length = 10;&#10;boolean useLetters = true;&#10;boolean useNumbers = false;&#10;String generatedString = RandomStringUtils.random(length, useLetters, useNumbers);" description="apache commons  random string" toReformat="false" toShortenFQNames="true">
+  <template name="string random" value="int length = 10;&#10;boolean useLetters = true;&#10;boolean useNumbers = false;&#10;String generatedString = RandomStringUtils.random(length, useLetters, useNumbers);" description="apache commons  random string" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="new string format" value="String output = String.format(&quot;%s &quot;, $str1$ );" description="String.format" toReformat="false" toShortenFQNames="true">
+  <template name="string format with assignment" value="String output = String.format(&quot;%s &quot;, $str1$ );" description="String.format" toReformat="false" toShortenFQNames="true">
+    <variable name="str1" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="string format" value="String.format(&quot;%s &quot;, $str1$ );" description="String.format" toReformat="false" toShortenFQNames="true">
     <variable name="str1" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_EXPRESSION" value="true" />

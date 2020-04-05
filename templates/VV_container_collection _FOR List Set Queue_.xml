@@ -338,7 +338,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newobj enum EnumSet.of(&quot;1&quot;,&quot;2&quot;) mutable" value="var $v_col1$ = List.&lt;$String$&gt;of(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;$END$);" description="получить битовые_флаги (мутабельный) из vararg или пустойСписок" toReformat="false" toShortenFQNames="true">
+  <template name="new enum EnumSet.of(&quot;1&quot;,&quot;2&quot;) mutable" value="var $v_col1$ = List.&lt;$String$&gt;of(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;$END$);" description="получить битовые_флаги (мутабельный) из vararg или пустойСписок" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="v_col1" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
