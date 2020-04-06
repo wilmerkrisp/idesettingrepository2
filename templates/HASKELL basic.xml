@@ -1,5 +1,10 @@
 <templateSet group="HASKELL basic">
-  <template name="list GENERATOR compregension" value="[(x, y, z) | x &lt;- arr, y &lt;-arr, z &lt;- arr, x^2 + y^2 == z^2, x&lt;=y ]" description="[ x | x &lt;- arr, x&gt;2]" toReformat="false" toShortenFQNames="true">
+  <template name="list GENERATOR comprehension 2" value="[(x, y, z) | x &lt;- arr, y &lt;-arr, z &lt;- arr, x^2 + y^2 == z^2, x&lt;=y ]" description="[ x | x &lt;- arr, x&gt;2]" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HASKELL_FILE" value="true" />
+    </context>
+  </template>
+  <template name="list GENERATOR comprehension 1" value="[ i | i &lt;- arr, i&lt;2 ]" description="[ x | x &lt;- arr, x&gt;2]" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HASKELL_FILE" value="true" />
     </context>

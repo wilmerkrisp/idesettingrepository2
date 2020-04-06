@@ -1,0 +1,7 @@
+<templateSet group="HASKELL collections">
+  <template name="list new :::[]" value="left:mid:right:[]" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HASKELL_FILE" value="true" />
+    </context>
+  </template>
+</templateSet>
