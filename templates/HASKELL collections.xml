@@ -1,5 +1,5 @@
 <templateSet group="HASKELL collections">
-  <template name="list new :::[]" value="left:mid:right:[]" toReformat="false" toShortenFQNames="true">
+  <template name="list new :::[]" value="left:mid:right:[]" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HASKELL_FILE" value="true" />
     </context>
@@ -9,7 +9,7 @@
       <option name="HASKELL_FILE" value="true" />
     </context>
   </template>
-  <template name="list concat" value=" left++[mid]++right" toReformat="false" toShortenFQNames="true">
+  <template name="list concat" value=" left++[mid]++right" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HASKELL_FILE" value="true" />
     </context>
