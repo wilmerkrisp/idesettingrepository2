@@ -4,4 +4,14 @@
       <option name="HASKELL_FILE" value="true" />
     </context>
   </template>
+  <template name="list GENERATOR comprehension 1" value="[ i | i &lt;- arr, i&lt;2 ]" description="[ x | x &lt;- arr, x&gt;2]" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HASKELL_FILE" value="true" />
+    </context>
+  </template>
+  <template name="list concat" value=" left++[mid]++right" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HASKELL_FILE" value="true" />
+    </context>
+  </template>
 </templateSet>

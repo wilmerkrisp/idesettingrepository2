@@ -4,7 +4,8 @@
       <option name="HASKELL_FILE" value="true" />
     </context>
   </template>
-  <template name="list GENERATOR comprehension 1" value="[ i | i &lt;- arr, i&lt;2 ]" description="[ x | x &lt;- arr, x&gt;2]" toReformat="false" toShortenFQNames="true">
+  <template name="function SUPER" value="$quickSort$ []  = []&#10;$quickSort$ [e] = [e]&#10;$quickSort$ arr = result where &#10;  result  = arr" toReformat="false" toShortenFQNames="true">
+    <variable name="quickSort" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HASKELL_FILE" value="true" />
     </context>
