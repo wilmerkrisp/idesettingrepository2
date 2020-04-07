@@ -16,7 +16,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="new optional new from var" value="var $var$ = Optional&lt;$classname$&gt;.ofNullable($somevar$);&#10;$END$" description="new object / optional" toReformat="false" toShortenFQNames="true">
+  <template name="new optional new from var" value="var $var$ = Optional&lt;$classname$&gt;.ofNullable($somevar$);&#10;$END$" description="Optional.ofNullable" toReformat="false" toShortenFQNames="true">
     <variable name="classname" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="var" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <variable name="somevar" expression="suggestFirstVariableName()" defaultValue="" alwaysStopAt="true" />
@@ -72,6 +72,12 @@
     </context>
   </template>
   <template name="new option паттерн обработки null" value="/*&#10;  Option.of( &quot;a&quot; ).map( a -&gt; null ) - в итоге будет Some(null) А НЕ NONE!!&#10;Optional.of( &quot;a&quot; ).map( a -&gt; null ) - в итоге будет Option.none&#10; */&#10;.flatMap(s -&gt; Optional.ofNullable( s ) )" description="new -&gt;func-&gt;null-&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="new optional EMPTY NULL" value="Optional.empty()&#10;$END$" description="Optional.empty()" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
