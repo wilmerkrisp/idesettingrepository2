@@ -10,4 +10,14 @@
       <option name="HASKELL_FILE" value="true" />
     </context>
   </template>
+  <template name="if case-of" value="case xs of &#10;    [] -&gt; &quot;empty.&quot;  &#10;    [x] -&gt; &quot;a singleton list.&quot;   &#10;    xs -&gt; &quot;a longer list.&quot; " toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HASKELL_FILE" value="true" />
+    </context>
+  </template>
+  <template name="if then else" value="if x==0 then 1 else x*1" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HASKELL_FILE" value="true" />
+    </context>
+  </template>
 </templateSet>
