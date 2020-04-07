@@ -4,7 +4,7 @@
       <option name="HASKELL_FILE" value="true" />
     </context>
   </template>
-  <template name="function SUPER" value="$quickSort$ []  = []&#10;$quickSort$ [e] = [e]&#10;$quickSort$ arr = result where &#10;  result  = arr" description="" toReformat="false" toShortenFQNames="true">
+  <template name="function SUPER" value="--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#10;------------------- $quickSort$ --------------------------------------------------------------------------------------------------------------------------------------------&#10;--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#10;&#10;$quickSort$ []  = []&#10;$quickSort$ [e] = [e]&#10;$quickSort$ arr = result where &#10;  result  = arr&#10;&#10;arr_1 = [5, 4, 1, 8, 7, 2, 6, 3]&#10;r_1=  $quickSort$ arr_1" description="" toReformat="false" toShortenFQNames="true">
     <variable name="quickSort" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HASKELL_FILE" value="true" />
