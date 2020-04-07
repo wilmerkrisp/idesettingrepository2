@@ -21,7 +21,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="func algo swap int values" value="int a=start;&#10;int b=end;&#10;&#10;if(a&gt;b)&#10;&#9;{&#10;&#9;// Swap start and end&#10;&#9;a=a^b;&#10;&#9;b=a^b;&#10;&#9;a=a^b;&#10;&#9;}" description="method" toReformat="false" toShortenFQNames="true">
+  <template name="func SWAP int values" value="int a=start;&#10;int b=end;&#10;&#10;if(a&gt;b)&#10;&#9;{&#10;&#9;// Swap start and end&#10;&#9;a=a^b;&#10;&#9;b=a^b;&#10;&#9;a=a^b;&#10;&#9;}" description="method" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_DECLARATION" value="true" />
     </context>
