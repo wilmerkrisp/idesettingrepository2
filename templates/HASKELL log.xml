@@ -4,7 +4,7 @@
       <option name="HASKELL_FILE" value="true" />
     </context>
   </template>
-  <template name="log" value="traceShow $v$" description="traceShow" toReformat="false" toShortenFQNames="true">
+  <template name="print log" value="traceShow $v$" description="traceShow" toReformat="false" toShortenFQNames="true">
     <variable name="v" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HASKELL_FILE" value="true" />
