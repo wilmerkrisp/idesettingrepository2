@@ -20,4 +20,9 @@
       <option name="HASKELL_FILE" value="true" />
     </context>
   </template>
+  <template name="funct unpack maybe" value="~(Just e)" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HASKELL_FILE" value="true" />
+    </context>
+  </template>
 </templateSet>
