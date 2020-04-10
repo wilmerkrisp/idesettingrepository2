@@ -393,4 +393,11 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="list List.of(&quot;1&quot;,&quot;2&quot;) immutable SUPER" value="List.&lt;$String$&gt;of(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;$END$)" description="NEW получить список (немутабельный) из vararg или пустойСписок" toReformat="false" toShortenFQNames="true">
+    <variable name="String" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
