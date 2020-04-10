@@ -15,4 +15,9 @@
       <option name="HASKELL_FILE" value="true" />
     </context>
   </template>
+  <template name="print log with message" value="pr x = traceShow (&quot;@&quot;++show x++&quot;@&quot;) x" description="traceShow" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HASKELL_FILE" value="true" />
+    </context>
+  </template>
 </templateSet>
