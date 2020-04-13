@@ -400,4 +400,12 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="forcoll1 SUPER" value="for(var $i$:$arr$)&#10;&#9;{&#10;&#9;$END$&#10;&#9;}" description="forEach(:) ANY ITERABLE TYPE array,collection" toReformat="false" toShortenFQNames="true">
+    <variable name="arr" expression="iterableVariable()" defaultValue="arr" alwaysStopAt="true" />
+    <variable name="i" expression="suggestIndexName()" defaultValue="i" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
