@@ -71,4 +71,11 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="for stream toMAP" value="var costs = new HashMap&lt;String,Integer&gt;( $graph$.entrySet()&#10;                                              .stream()&#10;                                              .map( e -&gt; Map.entry( e.getKey(), INFINITY ) )&#10;                                              .collect( toMap( Map.Entry::getKey, Map.Entry::getValue ) ) );&#9;&#10;&#9;&#10;$END$" description=".stream().collect(toMap)" toReformat="false" toShortenFQNames="true">
+    <variable name="graph" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
