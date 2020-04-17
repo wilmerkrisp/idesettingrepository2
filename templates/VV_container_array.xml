@@ -35,7 +35,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="for array2" value="for (var $a$ = 0 ; $a$ &lt; $arr$.length ; $a$++)&#10;&#9;{&#10;&#9;//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;&#9;/* $str$&#10;&#9; if($a$ == 10) break continue&#10;&#9; log_.debug   (&quot;$class$ $method$ for: &quot;+$a$+&quot;=&quot;+v_a);&#10;&#9; &#10;&#9; C     &#10;&#9; R     &#10;&#9; U     &#10;&#9; D&#10;&#9; */&#10;&#9;//&lt;/editor-fold&gt;&#10;&#10;&#9;&#10;&#9;&#10;        var v_a= $arr$[$a$];&#10;        &#10;&#9;&#9;&#10;&#9;$SELECTION$&#10;&#9;&#9;&#10;&#10;&#9;$END$&#9;&#10;        }" description="loop for array" toReformat="false" toShortenFQNames="true">
+  <template name="forarray2" value="for (var $a$ = 0 ; $a$ &lt; $arr$.length ; $a$++)&#10;&#9;{&#10;&#9;//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;&#9;/* $str$&#10;&#9; if($a$ == 10) break continue&#10;&#9; log_.debug   (&quot;$class$ $method$ for: &quot;+$a$+&quot;=&quot;+v_a);&#10;&#9; &#10;&#9; C     &#10;&#9; R     &#10;&#9; U     &#10;&#9; D&#10;&#9; */&#10;&#9;//&lt;/editor-fold&gt;&#10;&#10;&#9;&#10;&#9;&#10;        var v_a= $arr$[$a$];&#10;        &#10;&#9;&#9;&#10;&#9;$SELECTION$&#10;&#9;&#9;&#10;&#10;&#9;$END$&#9;&#10;        }" description="loop for array" toReformat="false" toShortenFQNames="true">
     <variable name="arr" expression="arrayVariable()" defaultValue="" alwaysStopAt="true" />
     <variable name="a" expression="suggestIndexName()" defaultValue="" alwaysStopAt="true" />
     <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />

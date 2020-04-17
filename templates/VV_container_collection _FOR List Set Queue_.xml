@@ -307,7 +307,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="forcoll1 optimized" value="$arr$.forEach( System.out::println);&#10;$END$" description="iterable.forEach(Л) ANY ITERABLE TYPE array,collection" toReformat="false" toShortenFQNames="true">
+  <template name="foreach coll1 optimized" value="$arr$.forEach( System.out::println);&#10;$END$" description="iterable.forEach(Л) ANY ITERABLE TYPE array,collection" toReformat="false" toShortenFQNames="true">
     <variable name="arr" expression="iterableVariable()" defaultValue="arr" alwaysStopAt="true" />
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
@@ -358,21 +358,21 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="forcolambda1 simple" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10; NOT DELETE ITERABLE ELEMENTS&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;$arr$.stream().forEach( (p_1)-&gt;{  $END$System.out.println(p_1);$SELECTION$ } );&#10;" description="iterable.stream().forEach(Л_print) ANY ITERABLE TYPE array,collection" toReformat="false" toShortenFQNames="true">
+  <template name="forstream colambda1 simple" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10; NOT DELETE ITERABLE ELEMENTS&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;&#10;$arr$.stream().forEach( (p_1)-&gt;{  $END$System.out.println(p_1);$SELECTION$ } );&#10;" description="iterable.stream().forEach(Л_print) ANY ITERABLE TYPE array,collection" toReformat="false" toShortenFQNames="true">
     <variable name="arr" expression="iterableVariable()" defaultValue="arr" alwaysStopAt="true" />
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="forcollambda2 guava indexed" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10; NOT DELETE ITERABLE ELEMENTS&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;Streams.mapWithIndex( $arr$.stream() , ( o , i ) -&gt; Map.entry( i , o ) )&#10;       .forEach( e -&gt;&#10;                 {$END$ System.out.println( e.getValue() ); $SELECTION$ } );" description="Stream.forEach(indexed) ANY ITERABLE TYPE array,collection" toReformat="false" toShortenFQNames="true">
+  <template name="forstream collambda2 guava indexed" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10; NOT DELETE ITERABLE ELEMENTS&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;Streams.mapWithIndex( $arr$.stream() , ( o , i ) -&gt; Map.entry( i , o ) )&#10;       .forEach( e -&gt;&#10;                 {$END$ System.out.println( e.getValue() ); $SELECTION$ } );" description="Stream.forEach(indexed) ANY ITERABLE TYPE array,collection" toReformat="false" toShortenFQNames="true">
     <variable name="arr" expression="iterableVariable()" defaultValue="arr" alwaysStopAt="true" />
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="forcollambda3 vavr indexed" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10; NOT DELETE ITERABLE ELEMENTS&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;$arr$&#10;var s = io.vavr.collection.List.&lt; String &gt; of( &quot;11&quot; , &quot;22&quot; , &quot;33&quot; );&#10;s.toStream()&#10; .zipWithIndex()&#10; .forEach( ( e ) -&gt;&#10;           {&#10;           System.out.println( e._2 + &quot; &quot; + e._1 );&#10;           } );&#10;&#10;" description="vavr_coll.toStream.forEach(indexed)    ANY ITERABLE TYPE array,collection" toReformat="false" toShortenFQNames="true">
+  <template name="forstream collambda3 vavr indexed" value="//&lt;editor-fold desc=&quot;.&quot;&gt;&#10;/*&#10; &#10; NOT DELETE ITERABLE ELEMENTS&#10; &#10; */&#10;//&lt;/editor-fold&gt;&#10;&#10;$arr$&#10;var s = io.vavr.collection.List.&lt; String &gt; of( &quot;11&quot; , &quot;22&quot; , &quot;33&quot; );&#10;s.toStream()&#10; .zipWithIndex()&#10; .forEach( ( e ) -&gt;&#10;           {&#10;           System.out.println( e._2 + &quot; &quot; + e._1 );&#10;           } );&#10;&#10;" description="vavr_coll.toStream.forEach(indexed)    ANY ITERABLE TYPE array,collection" toReformat="false" toShortenFQNames="true">
     <variable name="arr" expression="iterableVariable()" defaultValue="arr" alwaysStopAt="true" />
     <context>
       <option name="JAVA_EXPRESSION" value="true" />

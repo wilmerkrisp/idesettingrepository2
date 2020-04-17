@@ -659,247 +659,247 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.fill(arr,obj)" value="Arrays.fill(arr,obj);" description="заполняет весь массив значением obj" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.fill(arr,obj)" value="Arrays.fill(arr,obj);" description="заполняет весь массив значением obj" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.fill(arr,i1,i2,obj)" value="Arrays.fill(arr,i1,i2,obj);" description="заполняет диапазон массива значением obj" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.fill(arr,i1,i2,obj)" value="Arrays.fill(arr,i1,i2,obj);" description="заполняет диапазон массива значением obj" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.setAll(arr,lambda)" value="Arrays.setAll(arr,lambda);" description="заполняет весь массив значениями лямбды" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.setAll(arr,lambda)" value="Arrays.setAll(arr,lambda);" description="заполняет весь массив значениями лямбды" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.parallelSetAll(arr,lambda)" value="Arrays.parallelSetAll(arr,lambda);" description="заполняет весь массив значениями лямбды (используя параллелизм)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.parallelSetAll(arr,lambda)" value="Arrays.parallelSetAll(arr,lambda);" description="заполняет весь массив значениями лямбды (используя параллелизм)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.parallelPrefix(arr, lambda)" value="Arrays.parallelPrefix(arr, lambda);" description="заполняет весь массив значениями лямбды (накопительная функция)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.parallelPrefix(arr, lambda)" value="Arrays.parallelPrefix(arr, lambda);" description="заполняет весь массив значениями лямбды (накопительная функция)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.parallelPrefix(arr,i1,i2, lambda)" value="Arrays.parallelPrefix(arr,i1,i2, lambda);" description="заполняет весь массив значениями лямбды (накопительная функция) (диапазон)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.parallelPrefix(arr,i1,i2, lambda)" value="Arrays.parallelPrefix(arr,i1,i2, lambda);" description="заполняет весь массив значениями лямбды (накопительная функция) (диапазон)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.binarySearch(arr,obj)" value="Arrays.binarySearch(arr,obj);" description="двоичный поиск индекса obj а отсортированном массиве arr" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.binarySearch(arr,obj)" value="Arrays.binarySearch(arr,obj);" description="двоичный поиск индекса obj а отсортированном массиве arr" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.binarySearch(arr,i1,i2,obj)" value="Arrays.binarySearch(arr,i1,i2,obj);" description="двоичный поиск индекса obj а отсортированном массиве arr[i1,i2]" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.binarySearch(arr,i1,i2,obj)" value="Arrays.binarySearch(arr,i1,i2,obj);" description="двоичный поиск индекса obj а отсортированном массиве arr[i1,i2]" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.binarySearch(arr,obj,comparator)" value="Arrays.binarySearch(arr,obj,comparator);" description="двоичный поиск индекса obj а отсортированном массиве arr(&lt;&gt;версия с компаратором)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.binarySearch(arr,obj,comparator)" value="Arrays.binarySearch(arr,obj,comparator);" description="двоичный поиск индекса obj а отсортированном массиве arr(&lt;&gt;версия с компаратором)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.binarySearch(arr,i1,i2,obj,comparator)" value="Arrays.binarySearch(arr,i1,i2,obj,comparator);" description="двоичный поиск индекса obj а отсортированном массиве arr(&lt;&gt;версия с компаратором) на отрезке [i1,i2]" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.binarySearch(arr,i1,i2,obj,comparator)" value="Arrays.binarySearch(arr,i1,i2,obj,comparator);" description="двоичный поиск индекса obj а отсортированном массиве arr(&lt;&gt;версия с компаратором) на отрезке [i1,i2]" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.copyOf(arr,length)" value="Arrays.copyOf(arr,length);" description="скопировать массив arr" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.copyOf(arr,length)" value="Arrays.copyOf(arr,length);" description="скопировать массив arr" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func  Arrays.copyOf(arr,length,newType)" value="Arrays.copyOf(arr,length,newType);" description="скопировать массив arr в массив поддтипа newType" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.copyOf(arr,length,newType)" value="Arrays.copyOf(arr,length,newType);" description="скопировать массив arr в массив поддтипа newType" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.copyOfRange(arr,i1,i2)" value="Arrays.copyOfRange(arr,i1,i2);" description="скопировать интервал [i1,i2) массива arr" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.copyOfRange(arr,i1,i2)" value="Arrays.copyOfRange(arr,i1,i2);" description="скопировать интервал [i1,i2) массива arr" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.copyOfRange(arr,i1,i2,newType)" value="Arrays.copyOfRange(arr,i1,i2,newType);" description="скопировать интервал [i1,i2) массива arr в массив оддтипа newType" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.copyOfRange(arr,i1,i2,newType)" value="Arrays.copyOfRange(arr,i1,i2,newType);" description="скопировать интервал [i1,i2) массива arr в массив оддтипа newType" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.equals(arr1,arr2)" value="Arrays.equals(arr1,arr2);" description="поверхностное сравнение =" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.equals(arr1,arr2)" value="Arrays.equals(arr1,arr2);" description="поверхностное сравнение =" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.equals(arr1,i1,i2,arr2,i1,i2)" value="Arrays.equals(arr1,i1,i2,arr2,i1,i2);" description="поверхностное сравнение = отрезка1 и отрезка2" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.equals(arr1,i1,i2,arr2,i1,i2)" value="Arrays.equals(arr1,i1,i2,arr2,i1,i2);" description="поверхностное сравнение = отрезка1 и отрезка2" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.equals(arr1,arr2,comparator)" value="Arrays.equals(arr1,arr2,comparator);" description="поверхностное сравнение = (версия с компаратором)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.equals(arr1,arr2,comparator)" value="Arrays.equals(arr1,arr2,comparator);" description="поверхностное сравнение = (версия с компаратором)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func  Arrays.equals(arr1,i1,i2,arr2,i1,i2,comparator)" value="Arrays.equals(arr1,i1,i2,arr2,i1,i2,comparator);" description="поверхностное сравнение = отрезка1 и отрезка2 (версия с компаратором)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.equals(arr1,i1,i2,arr2,i1,i2,comparator)" value="Arrays.equals(arr1,i1,i2,arr2,i1,i2,comparator);" description="поверхностное сравнение = отрезка1 и отрезка2 (версия с компаратором)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.compare(arr1,arr2)" value="Arrays.compare(arr1,arr2);" description="поверхностное сравнение = &lt; &gt;" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.compare(arr1,arr2)" value="Arrays.compare(arr1,arr2);" description="поверхностное сравнение = &lt; &gt;" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.compare(arr1,i1,i2,arr2,i1,i2)" value="Arrays.compare(arr1,i1,i2,arr2,i1,i2);" description="поверхностное сравнение = &lt; &gt; отрезка1 и отрезка2" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.compare(arr1,i1,i2,arr2,i1,i2)" value="Arrays.compare(arr1,i1,i2,arr2,i1,i2);" description="поверхностное сравнение = &lt; &gt; отрезка1 и отрезка2" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.compare(arr1,arr2,comparator)" value="Arrays.compare(arr1,arr2,comparator);" description="поверхностное сравнение = &lt; &gt; (версия с компаратором)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.compare(arr1,arr2,comparator)" value="Arrays.compare(arr1,arr2,comparator);" description="поверхностное сравнение = &lt; &gt; (версия с компаратором)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.compare(arr1,i1,i2,arr2,i1,i2,comparator)" value="Arrays.compare(arr1,i1,i2,arr2,i1,i2,comparator);" description="поверхностное сравнение = &lt; &gt; отрезка1 и отрезка2 (версия с компаратором)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.compare(arr1,i1,i2,arr2,i1,i2,comparator)" value="Arrays.compare(arr1,i1,i2,arr2,i1,i2,comparator);" description="поверхностное сравнение = &lt; &gt; отрезка1 и отрезка2 (версия с компаратором)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.mismatch(arr1,arr2)" value="Arrays.mismatch(arr1,arr2);" description="индекс первого несовпадения при сравнении двух массивов" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.mismatch(arr1,arr2)" value="Arrays.mismatch(arr1,arr2);" description="индекс первого несовпадения при сравнении двух массивов" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.mismatch(arr1,i1,i2,arr2,i1,i2)" value="Arrays.mismatch(arr1,i1,i2,arr2,i1,i2);" description="индекс первого несовпадения при сравнении двух отрезков" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.mismatch(arr1,i1,i2,arr2,i1,i2)" value="Arrays.mismatch(arr1,i1,i2,arr2,i1,i2);" description="индекс первого несовпадения при сравнении двух отрезков" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func  Arrays.mismatch(arr1,arr2,comparator)" value="Arrays.mismatch(arr1,arr2,comparator);" description="индекс первого несовпадения при сравнении двух массивов (версия с компаратором)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.mismatch(arr1,arr2,comparator)" value="Arrays.mismatch(arr1,arr2,comparator);" description="индекс первого несовпадения при сравнении двух массивов (версия с компаратором)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.mismatch(arr1,i1,i2,arr2,i1,i2,comparator)" value="Arrays.mismatch(arr1,i1,i2,arr2,i1,i2,comparator);" description="индекс первого несовпадения при сравнении двух отрезков (версия с компаратором)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.mismatch(arr1,i1,i2,arr2,i1,i2,comparator)" value="Arrays.mismatch(arr1,i1,i2,arr2,i1,i2,comparator);" description="индекс первого несовпадения при сравнении двух отрезков (версия с компаратором)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.deepEquals(arr1,arr2)" value="Arrays.deepEquals(arr1,arr2);" description="глубокое сравнение (проверяет также вложенные массивы)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.deepEquals(arr1,arr2)" value="Arrays.deepEquals(arr1,arr2);" description="глубокое сравнение (проверяет также вложенные массивы)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func  Arrays.spliterator(arr)" value="Arrays.spliterator(arr);" description="получить сплитератор массива arr" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.spliterator(arr)" value="Arrays.spliterator(arr);" description="получить сплитератор массива arr" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func  Arrays.splitrrator(arr,i1,i2)" value="Arrays.splitrrator(arr,i1,i2);" description="получить сплитератор массива arr (версия для выборки поддиапазона)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.splitrrator(arr,i1,i2)" value="Arrays.splitrrator(arr,i1,i2);" description="получить сплитератор массива arr (версия для выборки поддиапазона)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func NEW  Arrays.stream(arr)" value="Arrays.stream(arr);" description="получить стрим массива arr" toReformat="false" toShortenFQNames="true">
+  <template name="liststream NEW Arrays.stream(arr)" value="Arrays.stream(arr);" description="получить стрим массива arr" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.stream(arr,i1,i2)" value="Arrays.stream(arr,i1,i2);" description="получить стрим массива arr (версия для выборки поддиапазона)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.stream(arr,i1,i2)" value="Arrays.stream(arr,i1,i2);" description="получить стрим массива arr (версия для выборки поддиапазона)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.deepToString()" value="Arrays.deepToString();" description="глубокая печать" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.deepToString()" value="Arrays.deepToString();" description="глубокая печать" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.deepHashCode()" value="Arrays.deepHashCode();" description="глубокий хешкод" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.deepHashCode()" value="Arrays.deepHashCode();" description="глубокий хешкод" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.sort(arr)" value="Arrays.sort(arr);" description="сортирует массив по возрастанию" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.sort(arr)" value="Arrays.sort(arr);" description="сортирует массив по возрастанию" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.sort(arr, comparator)" value="Arrays.sort(arr, comparator);" description="сортирует массив по компаратору" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.sort(arr, comparator)" value="Arrays.sort(arr, comparator);" description="сортирует массив по компаратору" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.sort(arr,i1,i2)" value="Arrays.sort(arr,i1,i2);" description="сортирует массив по возрастанию (поддиапазон)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.sort(arr,i1,i2)" value="Arrays.sort(arr,i1,i2);" description="сортирует массив по возрастанию (поддиапазон)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.sort(arr, i1,i2,comparator)" value="Arrays.sort(arr, i1,i2,comparator);" description="сортирует массив по компаратору (поддиапазон)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.sort(arr, i1,i2,comparator)" value="Arrays.sort(arr, i1,i2,comparator);" description="сортирует массив по компаратору (поддиапазон)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.parallelSort(arr)" value="Arrays.parallelSort(arr);" description="сортирует массив по возрастанию (используя параллелизм)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.parallelSort(arr)" value="Arrays.parallelSort(arr);" description="сортирует массив по возрастанию (используя параллелизм)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.parallelSort(arr, comparator)" value="Arrays.parallelSort(arr, comparator);" description="сортирует массив по компаратору (используя параллелизм)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.parallelSort(arr, comparator)" value="Arrays.parallelSort(arr, comparator);" description="сортирует массив по компаратору (используя параллелизм)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.parallelSort(arr,i1,i2)" value="Arrays.parallelSort(arr,i1,i2);" description="сортирует массив по возрастанию (используя параллелизм) (поддиапазон)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.parallelSort(arr,i1,i2)" value="Arrays.parallelSort(arr,i1,i2);" description="сортирует массив по возрастанию (используя параллелизм) (поддиапазон)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="list func Arrays.parallelSort(arr, i1,i2,comparator)" value="Arrays.parallelSort(arr, i1,i2,comparator);" description="сортирует массив по компаратору (используя параллелизм) (поддиапазон)" toReformat="false" toShortenFQNames="true">
+  <template name="list Arrays.parallelSort(arr, i1,i2,comparator)" value="Arrays.parallelSort(arr, i1,i2,comparator);" description="сортирует массив по компаратору (используя параллелизм) (поддиапазон)" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
