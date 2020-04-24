@@ -141,4 +141,21 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
+  <template name="func convert int to float" value="Integer.valueOf( (int) i._1 )&#10;       .floatValue()" description="Integer.valueOf.floatValue" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="func округление" value="Math.round () //данный метод округляет до ближайшего целого числа.&#10;Math.round (*10)/10 //округление до 0,1&#10;Math.floor () // данный метод округляет число до ближайшего целого вниз.&#10;Math.ceil()   //данный метод округляет число до ближайшего целого вверх.&#10;trunc //целая часть числа &#10;fruc //дробная часть числа" description="method" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="for WHILE POP + С-STYLE" value="var q   = new ArrayDeque&lt;Integer&gt;( $arr$ );&#10;var result = new ArrayList&lt;Integer&gt;();&#10;Integer e=null;&#10;while( (e=q.pollLast())!=null )&#10;&#9;{&#10;&#9;var fst = q.peekFirst();&#10;&#9;var lst = q.peekLast();&#10;&#9;result.add( 0, e );&#10;&#9;}&#10;print( result );$END$&#10;&#9;&#9;&#9;" description="while poolLast" toReformat="false" toShortenFQNames="true">
+    <variable name="arr" expression="iterableVariable()" defaultValue="arr" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
