@@ -143,6 +143,7 @@
   <action id="NewElementInMenuGroup">
     <keyboard-shortcut first-keystroke="ctrl f1" />
     <keyboard-shortcut first-keystroke="ctrl n" />
+    <keyboard-shortcut first-keystroke="alt n" />
   </action>
   <action id="NextDiff" />
   <action id="OpenModuleSettings" />
