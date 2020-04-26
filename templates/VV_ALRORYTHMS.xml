@@ -158,4 +158,14 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="formap FOR-FOR iterate over map and internal map" value="var graph  = Map.&lt;String,Map&lt;String,Integer&gt;&gt;of( &quot;a&quot;, Map.of( &quot;b&quot;, 1,&quot;c&quot;,4,&quot;d&quot;,3 ),&#10;                                                 &quot;b&quot;, Map.of( &quot;a&quot;, 1,&quot;d&quot;,2 ),&#10;                                                 &quot;c&quot;, Map.of( &quot;a&quot;, 4,&quot;d&quot;,5  ),&#10;                                                 &quot;d&quot;, Map.of(&quot;b&quot;,2,&quot;c&quot;,5,&quot;a&quot;,3  )&#10;var costs = new ArrayList&lt;Tuple3&lt;String,String,Integer&gt;&gt;();&#10;graph.forEach( ( v1, dict1 ) -&gt; dict1.forEach( ( v2, cost ) -&gt; costs.add(Tuple.of( v1, v2, cost )) ) );" description="graph.forEach( forEach )" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="formap PARENT_TABLE iteration" value="var    next_vertex = key;&#10;Parent next_parent = null;&#10;while( ( next_parent = table_.getOrDefault( next_vertex, null ) ) != null )&#10;&#9;{&#10;&#9;if( next_vertex == next_parent.getParent() )&#10;&#9;&#9;return next_parent;&#10;&#9;next_vertex = next_parent.getParent();&#10;&#9;}" description="while map.getOrDefault():" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
